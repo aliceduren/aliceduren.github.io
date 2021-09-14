@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&family=Roboto+Mono:wght@100&display=swap');
+h1 {
+  background-color: brown;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Glory;
+  height: 100px;
+}
+h2 {
+  text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.me {
+  float: right;
+  box-shadow: black;
+  border: 1px solid black;
+}
+.tb {
+  color: white;
+}
+.bb {
+  color: rgb(255, 238, 0);
+}
+.last {
+  color: yellow;
+}
+footer {
+  background-color: brown;
+}
