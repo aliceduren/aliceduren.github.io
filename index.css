@@ -4,7 +4,8 @@ h1 {
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: Glory;
-  height: 101px;
+  font-size: 80px;
+  height: 100px;
 }
 h2 {
   text-decoration: underline;
@@ -14,6 +15,12 @@ h2 {
   float: right;
   box-shadow: black;
   border: 1px solid black;
+  position: relative;
+  bottom: 50px;
+  right: 50px;
+}
+a {
+  color: rgb(94, 191, 255);
 }
 .tb {
   color: white;
@@ -26,4 +33,5 @@ h2 {
 }
 footer {
   background-color: brown;
+  text-align: center;
 }
