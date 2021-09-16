@@ -1,4 +1,4 @@
-const lastUp=new Date(). toLocaleString();
+const lastUp=document.lastModified;
 
 document.querySelector("#year").textContent=lastUp;
 
