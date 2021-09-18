@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&family=Roboto+Mono:wght@100&display=swap');
 
 h1 {
-  background-color: rgb(80, 155, 60);
+  background-color: rgb(40 103 24);
   border-radius: 0.2em;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -42,15 +42,15 @@ a {
 }
 
 .bb {
-  color: rgb(255, 238, 0);
+  color: rgb(255, 249, 163);
   font-size: 0.7em;
 }
 .last {
-  color: yellow;
+  color: rgb(255, 249, 163);
   font-size: 0.7em;
 }
 footer {
-  background-color: rgb(80, 155, 60);
+  background-color: rgb(40 103 24);
   color: rgb(255, 255, 255);
   text-align: center;
   border-radius: 0.5em;
