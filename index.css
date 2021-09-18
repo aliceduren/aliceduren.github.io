@@ -1,26 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&family=Roboto+Mono:wght@100&display=swap');
+
 h1 {
-  background-color: rgb(49, 78, 139);
-  color: rgb(255, 255, 255);
+  background-color: rgb(63, 146, 46);
+  border-radius: 0.2em;
+  color: rgb(245, 224, 197);
   text-align: center;
   font-family: sans-serif;
-  font-size: 80px;
-  height: 100px;
+  font-size: 5em;
+  margin-top: 0;
 }
 h2 {
-  text-decoration: underline;
+  border-bottom: 1px solid rgb(0, 0, 0);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.me {
+img {
   float: right;
-  box-shadow: black;
-  border: 1px solid black;
-  position: relative;
-  top: 10px;
-  right: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+  margin-top: -5em;
+  margin-right: 5em;
+  width: 25em;
+  border-radius: 0.2em;
 }
+div {
+  margin-left: 5em;
+  color: rgb(68, 36, 18);
+  font-size: 1.3em;
+}
+body {
+  background-color: rgb(220, 241, 184);
+}
+
 a {
-  color: rgb(94, 191, 255);
+  color: rgb(121, 76, 33);
 }
 .tb {
   color: white;
@@ -32,6 +43,13 @@ a {
   color: yellow;
 }
 footer {
-  background-color: rgb(49, 78, 139);
+  background-color: rgb(63, 146, 46);
+  color: rgb(245, 224, 197);
   text-align: center;
+  border-radius: 0.2em;
+  position: fixed;
+  width: 100%;
+  bottom: 6px;
+  font-size: 1.2em;
+  padding: 0.5em;
 }
