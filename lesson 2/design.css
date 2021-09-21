@@ -1,0 +1,24 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  padding: 10px;
+}
+.Prin {
+  background-color: rgb(179, 14, 14);
+  color: aqua;
+  text-align: center;
+  /* grid-column: 1/4; */
+}
+.this1 {
+  grid-row: 1/2;
+}
+h1 {
+  background-color: black;
+  color: bisque;
+  text-align: center;
+  font-size: 2.5em;
+}
+footer {
+  text-align: center;
+}
