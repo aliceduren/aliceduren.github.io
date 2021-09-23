@@ -1,0 +1,26 @@
+.column {
+  background-color: aqua;
+  width: 50%;
+  float: left;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+p {
+  color: red;
+}
+
+p.ex1 {
+  display: none;
+}
+p.ex2 {
+  display: inline;
+}
+p.ex3 {
+  display: block;
+}
+p.ex4 {
+  display: inline-block;
+}
