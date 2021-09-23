@@ -14,9 +14,6 @@ h1 {
   border-radius: 2em;
   margin-top: 0%;
 }
-.hd2 {
-  font-size: small;
-}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
