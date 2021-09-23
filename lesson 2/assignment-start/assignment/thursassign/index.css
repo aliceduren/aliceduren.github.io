@@ -1,0 +1,27 @@
+body {
+  background-color: #e7ecf2;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  padding: 10px;
+}
+.block {
+  background-color: white;
+  text-align: center;
+  padding: 3em;
+}
+ul {
+  list-style-type: none;
+}
+.button {
+  background-color: violet;
+  color: white;
+}
+span {
+  initial-letter: 2;
+}
+.most {
+  margin-top: 0%;
+}
