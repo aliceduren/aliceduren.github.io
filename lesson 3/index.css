@@ -1,15 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
+body {
+  margin-left: 1em;
+}
 img {
-  width: 10em;
+  width: 20em;
 }
 div {
-  border-radius: 1em;
+  border-radius: 0.5em;
+  border: solid black 1px;
 }
 .headnfoot {
-  background-color: #11656b;
+  color: white;
+  background-color: #126a70;
 }
 .nav {
   background-color: #6feaf2;
 }
 .body {
   background-color: white;
+}
+.h1 {
+  color: white;
+  background-color: #346c70;
+}
+.h2 {
+  background-color: #1eb2bd;
+}
+/*whyisn'tthisworking??*/
+.headnfoottype {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.navtype {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.bodytype {
+  font-family: 'Raleway', sans-serif;
 }
