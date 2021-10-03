@@ -1,33 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
 body {
+  background-color: rgb(189, 185, 185);
+}
+
+.title {
+  font-size: 3em;
+  padding: 0.3em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: #126a70;
+  margin: 0px;
+}
+.content {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+main {
+  padding: 1.2em;
+}
+nav ul {
+  background-color: #6feaf2;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0.5em;
+  font-size: 1.5em;
+  margin: auto;
+}
+ul {
+  font-family: 'Raleyway', sans-serif;
+}
+h1 {
+  color: #346c70;
+  font-family: 'Poppins', sans-serif;
+}
+h2 {
+  color: #1eb2bd;
+  font-family: 'Poppins', sans-serif;
+}
+h3 {
+  font-family: 'Raleyway', sans-serif;
+}
+body {
   margin-left: 1em;
+}
+.icon {
+  float: right;
+  width: 1.3em;
 }
 img {
   width: 20em;
 }
-div {
-  border-radius: 0.5em;
-  border: solid black 1px;
+
+p {
+  font-family: 'Raleyway', sans-serif;
 }
-.headnfoot {
+.head h2 {
   color: white;
   background-color: #126a70;
 }
-.nav {
+.nav h2 {
+  color: black;
   background-color: #6feaf2;
 }
-.body {
+.body h2 {
+  color: black;
   background-color: white;
 }
-.h1 {
+.h1 h2 {
   color: white;
   background-color: #346c70;
 }
-.h2 {
+.h2 h2 {
+  color: white;
   background-color: #1eb2bd;
 }
-/*whyisn'tthisworking??*/
-.headnfoottype {
+
+.headtype {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
@@ -37,4 +89,11 @@ div {
 }
 .bodytype {
   font-family: 'Raleway', sans-serif;
+}
+footer {
+  background-color: #126a70;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
 }
