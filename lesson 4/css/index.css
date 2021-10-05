@@ -1,3 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
+.content {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+body {
+  background-color: rgb(189, 185, 185);
+}
+.icon {
+  justify-content: flex-start;
+  width: 5em;
+  height: 5em;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  justify-content: center;
+  color: white;
+}
+
+header {
+  display: flex;
+  /* justify-content: space-between; */
+
+  padding: 0.3em;
+
+  background-color: #126a70;
+  margin: 0px;
+}
+
+main {
+  padding: 1.2em;
+}
+nav ul {
+  background-color: #6feaf2;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0.5em;
+  font-size: 1.5em;
+  margin: auto;
+}
+ul {
+  font-family: 'Raleyway', sans-serif;
+}
+h1 {
+  color: #346c70;
+  font-family: 'Poppins', sans-serif;
+}
+h2 {
+  color: #1eb2bd;
+  font-family: 'Poppins', sans-serif;
+}
+h3 {
+  font-family: 'Raleyway', sans-serif;
+}
+body {
+  margin-left: 1em;
+}
+img {
+  width: 20em;
+}
+
+p {
+  font-family: 'Raleyway', sans-serif;
+}
+.head h2 {
+  color: white;
+  background-color: #126a70;
+}
+.nav h2 {
+  color: black;
+  background-color: #6feaf2;
+}
+.body h2 {
+  color: black;
+  background-color: white;
+}
+.h1 h2 {
+  color: white;
+  background-color: #346c70;
+}
+.h2 h2 {
+  color: white;
+  background-color: #1eb2bd;
+}
+
+.headtype {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.navtype {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.bodytype {
+  font-family: 'Raleway', sans-serif;
+}
 footer {
   background-color: #126a70;
   color: rgb(255, 255, 255);
