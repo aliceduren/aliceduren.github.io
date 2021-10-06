@@ -13,6 +13,7 @@ body {
   justify-content: flex-start;
   width: 5em;
   height: 5em;
+  margin: 10px 10px;
 }
 .title {
   font-family: 'Poppins', sans-serif;
@@ -24,34 +25,54 @@ body {
 
 header {
   display: flex;
-  /* justify-content: space-between; */
-
-  padding: 0.3em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 
   background-color: #126a70;
   margin: 0px;
 }
-.heroimage {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-main {
-  padding: 1.2em;
-}
-nav ul {
+nav {
+  margin: 0 auto;
   background-color: #6feaf2;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
+}
+.navigation {
+  color: rgb(0, 0, 0);
+
   list-style: none;
-  padding: 0.5em;
-  font-size: 1.5em;
+  padding: 0;
+  font-size: 1.2em;
+  font-family: 'Raleyway', sans-serif;
   margin: auto;
 }
-ul {
-  font-family: 'Raleyway', sans-serif;
+.navigation li:first-child {
+  display: block;
 }
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  text-align: center;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.responsive li {
+  display: block;
+}
+main button {
+  background-color: transparent;
+}
+.heroimage {
+  display: none;
+}
+
+.forecast li {
+  display: none;
+}
+
 h1 {
   color: #346c70;
   font-family: 'Poppins', sans-serif;
@@ -66,45 +87,11 @@ h3 {
 body {
   margin-left: 1em;
 }
-img {
-  width: 20em;
-}
 
 p {
   font-family: 'Raleyway', sans-serif;
 }
-.head h2 {
-  color: white;
-  background-color: #126a70;
-}
-.nav h2 {
-  color: black;
-  background-color: #6feaf2;
-}
-.body h2 {
-  color: black;
-  background-color: white;
-}
-.h1 h2 {
-  color: white;
-  background-color: #346c70;
-}
-.h2 h2 {
-  color: white;
-  background-color: #1eb2bd;
-}
 
-.headtype {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-.navtype {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-}
-.bodytype {
-  font-family: 'Raleway', sans-serif;
-}
 .socials {
   display: flex;
   justify-content: space-evenly;
@@ -115,4 +102,82 @@ footer {
   text-align: center;
   font-size: 1em;
   padding: 1em;
+}
+@media only screen and (min-width: 760px) {
+  main {
+    text-align: center;
+    padding: 1.2em;
+  }
+
+  .summary {
+    position: absolute;
+    top: 20em;
+    left: 20em;
+    max-width: 25%;
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #000000;
+    background-color: #126a70;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  .heroimage {
+    display: block;
+  }
+  table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    width: 100%;
+    border-color: grey;
+  }
+
+  .fiveday {
+    background-color: #126a70;
+  }
+  td {
+    border: 3px solid #fcbfb7;
+    display: table-cell;
+    font-size: 2em;
+    text-align: center;
+  }
+  .article h3 {
+    font-size: 3em;
+    padding: 0.3em;
+  }
+  .articleimg {
+    float: right;
+    width: 12em;
+  }
+  .article {
+    background-color: #126a70;
+  }
+  .locationmap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #126a70;
+  }
+  .rcolumm {
+    grid-column: 2/2;
+  }
+  .lcolumn {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }

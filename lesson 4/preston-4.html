@@ -15,47 +15,71 @@
         
     </header>
     <nav>
-        <ul>
-            <li>Home</li>
-            <li>Preston</li>
-            <li>Soda Springs</li>
-            <li>Fish Haven</li>
-            <li>Storm Center</li>
-            <li>Gallery</li>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776 Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Preston Idaho</h1>
+        <h2>Preston Idaho</h1>
+        <button onclick="toggleMenu()">&#9776</button>
         <div class="heroimage">
-            <img src="images/icon.png">
-            <h3>Weather, Summary</h3>
+            <img src="images/banner.jpg">
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>Sunny</p>
+                <p>Temperature:80F</p>
+            </div>
         </div>
-        <nav>
+        <div class="fiveday">
             <h2>Five Day Forecast</h2>
-        </nav>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>70</td>
+                        <td>70</td>
+                        <td>70</td>
+                        <td>70</td>
+                        <td>70</td>
+
+                    </tr>
+                </tbody>
+            </table>   
+        </div>
         <div class="article">
-            <h3>Article</h3>
             <img class="articleimg" src="images/icon.png">
-            <p>This is a paragraph.</p>
+            <h3>Article</h3>
+            <p>On ent aut et modicitis ent ut lab imaxim lacepuda diaspic tianderi corepere, quiaepero 
+                te commos accaept atectia con plicatibus asiminulpa ducidit recusam conserc hitaectios 
+                eossinum, as volor acea quis con repudae cum exerum faccupta voluptatus doluptaquis 
+                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
+                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
+                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
+                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae 
+                </p>
+        </div>
+        <h3>Contact Information</h3>
+        <div class="locationmap">
+            <div class="rcolumn">
+                <p>This street. street <br>
+                aliceduren19@gmail.com<br>
+                123-4567-8901</p>
+                    <img src="images/69.jpg">
+                    <img src="images/69.jpg">
+                    <img src="images/69.jpg">
+            </div>
+            <div class="lcolumn">
+                <img src="images/icon.png">
+            </div>
         </div>
     </main>
     <footer>
-        <div class="locationmap">
-            <img src="images/icon.png">
-            <div class="contact">
-                <h3>Contact Information</h3>
-                <ul>
-                    <li>2</li>
-                    <li>1</li>
-                    <li>3</li>
-                </ul>
-                <div class="socials">
-                    <img src="images/icon.png">
-                    <img src="images/icon.png">
-                    <img src="images/icon.png">
-                </div>
-            </div>
-        </div>
+        
         <span class= "tb">© <span id="date"></span> | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
         <span class="last">Last Updated: </span><span class="bb" id="year"></span>
     </footer>
