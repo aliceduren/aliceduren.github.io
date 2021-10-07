@@ -4,6 +4,9 @@
   width: 80%;
   margin: 0 auto;
 }
+.hide {
+  display: none;
+}
 body {
   background-color: rgb(189, 185, 185);
 }
@@ -108,7 +111,9 @@ footer {
     text-align: center;
     padding: 1.2em;
   }
-
+  .hide {
+    display: block;
+  }
   .summary {
     position: absolute;
     top: 20em;
@@ -145,7 +150,6 @@ footer {
     box-sizing: border-box;
     text-indent: initial;
     width: 100%;
-    border-color: grey;
   }
 
   .fiveday {

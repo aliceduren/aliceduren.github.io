@@ -5,8 +5,17 @@ hambutton.addEventListener('click',() => {mainnav.classList.toggle('responsive')
 
 window.onresize =() => {if(window.innerWidth >760) mainnav.classList.toggle('responsive')};
 
-function toggleMenu(){
-    document.querySelector('.heroimage').classList.toggle("hide");
+function toggleMenu1(){
+  document.getElementById('heroimage').classList.toggle("hide");
+  }
+function toggleMenu2(){
+  document.getElementById('fiveday').classList.toggle("hide");
+  }
+function toggleMenu3(){
+  document.getElementById('article').classList.toggle("hide");
+  }
+function toggleMenu4(){
+  document.getElementById('locationmap').classList.toggle("hide");
   }
 const lastUp=document.lastModified;
 

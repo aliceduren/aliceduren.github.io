@@ -11,8 +11,7 @@
     <div class="content">
     <header>
         <img class="icon" src="images/icon.png" alt="Sun logo">
-        <h1 class="title">Weather or No</h1>
-        
+        <h1 class="title">Weather or No</h1>  
     </header>
     <nav>
         <ul class="navigation">
@@ -27,8 +26,8 @@
     </nav>
     <main>
         <h2>Preston Idaho</h1>
-        <button onclick="toggleMenu()">&#9776</button>
-        <div class="heroimage">
+        <button onclick="toggleMenu1()">&#9776</button>
+        <div id="heroimage" class="hide">
             <img src="images/banner.jpg">
             <div class="summary">
                 <h3>Weather Summary</h3>
@@ -36,8 +35,9 @@
                 <p>Temperature:80F</p>
             </div>
         </div>
-        <div class="fiveday">
-            <h2>Five Day Forecast</h2>
+        <h2>Five Day Forcast</h2>
+        <button onclick="toggleMenu2()">&#9776</button>
+        <div id="fiveday" class="hide">
             <table>
                 <tbody>
                     <tr>
@@ -46,14 +46,14 @@
                         <td>70</td>
                         <td>70</td>
                         <td>70</td>
-
                     </tr>
                 </tbody>
             </table>   
         </div>
-        <div class="article">
+        <h3>Article</h3>
+        <button onclick="toggleMenu3()">&#9776</button>
+        <div id="article" class="hide">
             <img class="articleimg" src="images/icon.png">
-            <h3>Article</h3>
             <p>On ent aut et modicitis ent ut lab imaxim lacepuda diaspic tianderi corepere, quiaepero 
                 te commos accaept atectia con plicatibus asiminulpa ducidit recusam conserc hitaectios 
                 eossinum, as volor acea quis con repudae cum exerum faccupta voluptatus doluptaquis 
@@ -64,7 +64,8 @@
                 </p>
         </div>
         <h3>Contact Information</h3>
-        <div class="locationmap">
+        <button onclick="toggleMenu4()">&#9776</button>
+        <div id="locationmap" class="hide">
             <div class="rcolumn">
                 <p>This street. street <br>
                 aliceduren19@gmail.com<br>
