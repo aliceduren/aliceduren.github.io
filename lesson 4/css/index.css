@@ -109,7 +109,7 @@ nav {
 #locationmap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2;
+  grid-template-rows: 2fr;
   text-align: center;
   padding: 2em;
   color: #000000;
@@ -155,7 +155,6 @@ p {
   button {
     display: block;
     background-color: transparent;
-    position: intial;
   }
   /* .hide {
     display: none;
