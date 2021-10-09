@@ -4,18 +4,23 @@
   width: 80%;
   margin: 0 auto;
 }
-.hide {
-  display: none;
+main {
+  padding: 1.2em;
 }
 body {
+  margin-left: 1em;
   background-color: rgb(189, 185, 185);
 }
+button {
+  display: none;
+}
+
 .icon {
   border: 5px solid black;
   background-color: white;
   justify-content: flex-start;
   width: 5em;
-  height: 5em;
+  height: auto;
   margin: 10px 10px;
 }
 .title {
@@ -27,55 +32,109 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-
   background-color: #126a70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0px;
+  width: 100%;
 }
 nav {
   margin: 0 auto;
   background-color: #6feaf2;
 }
 .navigation {
+  display: flex;
   color: rgb(0, 0, 0);
-
   list-style: none;
   padding: 0;
   font-size: 1.2em;
   font-family: 'Raleyway', sans-serif;
   margin: auto;
 }
-.navigation li:first-child {
-  display: block;
-}
 .navigation li {
-  display: none;
+  flex: 1 1 auto;
 }
 .navigation a {
-  display: block;
   text-align: center;
+  display: block;
   padding: 0.8rem 2%;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
-.responsive li {
+.navigation li:first-child {
+  display: none;
+}
+
+#fiveday {
+  background-color: #126a70;
+  text-align: center;
+}
+#fiveday li {
+  display: inline-block;
+  padding: 13px 40px;
+  list-style: none;
+  font-size: 15px;
+}
+
+#heroimage {
   display: block;
+  text-align: center;
+  position: relative;
 }
-main button {
-  background-color: transparent;
+.summary {
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-.heroimage {
-  display: none;
+#heroimage img {
+  width: 100%;
+  height: auto;
 }
 
-.forecast li {
-  display: none;
+.article h3 {
+  font-size: 3em;
+  padding: 0.3em;
+}
+.articleimg {
+  float: right;
+  width: 10rem;
 }
 
+#locationmap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
+  text-align: center;
+  padding: 2em;
+  background-color: #126a70;
+}
+
+.rcolumm {
+  grid-column: 2/2;
+}
+.lcolumn {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#article {
+  background-color: #126a70;
+  padding: 2em;
+}
+
+footer {
+  background-color: #126a70;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+}
 h1 {
   color: #346c70;
   font-family: 'Poppins', sans-serif;
@@ -87,101 +146,53 @@ h2 {
 h3 {
   font-family: 'Raleyway', sans-serif;
 }
-body {
-  margin-left: 1em;
-}
 
 p {
   font-family: 'Raleyway', sans-serif;
 }
-
-.socials {
-  display: flex;
-  justify-content: space-evenly;
-}
-footer {
-  background-color: #126a70;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 1em;
-  padding: 1em;
-}
-@media only screen and (min-width: 760px) {
-  main {
-    text-align: center;
-    padding: 1.2em;
-  }
-  .hide {
+@media only screen and (max-width: 760px) {
+  button {
     display: block;
+    background-color: transparent;
+    position: intial;
   }
+  /* .hide {
+    display: none;
+  } */
   .summary {
     position: absolute;
-    top: 20em;
-    left: 20em;
-    max-width: 25%;
-    margin: 0;
-    padding: 0.5rem;
-    font-size: 0.8rem;
-    color: #000000;
-    background-color: #126a70;
+    width: auto;
+    height: auto;
+  }
+  #heroimage img {
+    width: 100%;
+    height: auto;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
   }
   .navigation {
-    display: flex;
-  }
-  .navigation li {
+    overflow: hidden;
     display: block;
-    flex: 1 1 auto;
-  }
-  .navigation a {
-    text-align: center;
   }
   .navigation li:first-child {
-    display: none;
-  }
-  button {
-    display: none;
-  }
-  .heroimage {
     display: block;
   }
-  table {
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    width: 100%;
-  }
-
-  .fiveday {
-    background-color: #126a70;
-  }
-  td {
-    border: 3px solid #fcbfb7;
-    display: table-cell;
-    font-size: 2em;
-    text-align: center;
-  }
-  .article h3 {
-    font-size: 3em;
-    padding: 0.3em;
+  .navigation li {
+    display: none;
   }
   .articleimg {
-    float: right;
-    width: 12em;
+    float: none;
+    width: 100%;
   }
-  .article {
-    background-color: #126a70;
+  #locationmap {
+    display: block;
   }
-  .locationmap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #126a70;
-  }
-  .rcolumm {
-    grid-column: 2/2;
-  }
-  .lcolumn {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  .socialimg {
+    width: 100%;
+    height: auto;
   }
 }

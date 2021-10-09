@@ -25,35 +25,33 @@
         </ul>
     </nav>
     <main>
-        <h2>Preston Idaho</h1>
-        <button onclick="toggleMenu1()">&#9776</button>
+        <h1>Preston Idaho</h1>
+        <!-- <button onclick="toggleMenu1()">&#9776</button> -->
         <div id="heroimage" class="hide">
-            <img src="images/banner.jpg">
+            
             <div class="summary">
                 <h3>Weather Summary</h3>
-                <p>Sunny</p>
-                <p>Temperature:80F</p>
+                <p>Sky: Sunny</p>
+                <p>Temperature:85F</p>
             </div>
+            <img src="images/banner.jpg">
         </div>
         <h2>Five Day Forcast</h2>
-        <button onclick="toggleMenu2()">&#9776</button>
+        <!-- <button onclick="toggleMenu2()">&#9776</button> -->
         <div id="fiveday" class="hide">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                    </tr>
-                </tbody>
-            </table>   
+            <ul>
+                <li><img src="images/phsmall.jpg"></li>
+                <li><img src="images/phsmall.jpg"></li>
+                <li><img src="images/phsmall.jpg"></li>
+                <li><img src="images/phsmall.jpg"></li>
+                <li><img src="images/phsmall.jpg"></li>
+            </ul>
         </div>
-        <h3>Article</h3>
-        <button onclick="toggleMenu3()">&#9776</button>
-        <div id="article" class="hide">
-            <img class="articleimg" src="images/icon.png">
+        <h2>Article</h2>
+        <!-- <button onclick="toggleMenu3()">&#9776</button> -->
+        <div id="article">
+            <img class="articleimg" src="images/ph.jpg">
+            <h3>Preston</h3>
             <p>On ent aut et modicitis ent ut lab imaxim lacepuda diaspic tianderi corepere, quiaepero 
                 te commos accaept atectia con plicatibus asiminulpa ducidit recusam conserc hitaectios 
                 eossinum, as volor acea quis con repudae cum exerum faccupta voluptatus doluptaquis 
@@ -62,25 +60,29 @@
                 exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
                 dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae 
                 </p>
+                
         </div>
-        <h3>Contact Information</h3>
-        <button onclick="toggleMenu4()">&#9776</button>
-        <div id="locationmap" class="hide">
-            <div class="rcolumn">
-                <p>This street. street <br>
-                aliceduren19@gmail.com<br>
-                123-4567-8901</p>
-                    <img src="images/69.jpg">
-                    <img src="images/69.jpg">
-                    <img src="images/69.jpg">
-            </div>
-            <div class="lcolumn">
-                <img src="images/icon.png">
-            </div>
-        </div>
+    
+        <h2>Contact Information</h2>
+        <!-- <button onclick="toggleMenu4()">&#9776</button> -->
+       
     </main>
     <footer>
-        
+        <div id="locationmap" class="hide">
+            <div class="rcolumn">
+                <p>111 location street <br>
+                gmail@gmail.com<br>
+                123-4567-8901<br><br>
+                Follow us on social platforms:</p>
+                <br>
+                <a href="#"><img src="images/phsmall.jpg"></a>
+                <a href="#"><img src="images/phsmall.jpg"></a>
+                <a href="#"><img src="images/phsmall.jpg"></a>
+            </div>
+            <div class="lcolumn">
+                <img class="socialimg" src="images/ph.jpg">
+            </div>
+        </div class="end">
         <span class= "tb">© <span id="date"></span> | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
         <span class="last">Last Updated: </span><span class="bb" id="year"></span>
     </footer>
