@@ -112,7 +112,8 @@ nav {
   grid-template-rows: 2;
   text-align: center;
   padding: 2em;
-  background-color: #126a70;
+  color: #000000;
+  background-color: #6feaf2;
 }
 
 .rcolumm {
