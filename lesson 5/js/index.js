@@ -3,7 +3,7 @@ const mainnav= document.querySelector('.navigation')
 
 hambutton.addEventListener('click',() => {mainnav.classList.toggle('responsive')},false);
 
-window.onresize =() => {if(window.innerWidth > 760) mainnav.classList.toggle('responsive')};
+window.onresize =() => {if(window.innerWidth > 760) mainnav.classList.remove('responsive')};
 // didn't need this, but here just for reference
 // function toggleMenu1(){
 //   document.getElementById('heroimage').classList.toggle("hide");
