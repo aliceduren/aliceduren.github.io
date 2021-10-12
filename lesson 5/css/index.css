@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
+.content {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+main {
+  padding: 1.2em;
+}
+body {
+  margin-left: 1em;
+  background-color: rgb(189, 185, 185);
+}
+button {
+  display: none;
+}
+
+.icon {
+  border: 5px solid black;
+  background-color: white;
+  justify-content: flex-start;
+  width: 6em;
+  height: auto;
+  margin: 10px 10px;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+
+  justify-content: center;
+}
+.title h1 {
+  color: white;
+}
+header {
+  background-color: #126a70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  width: 100%;
+}
+nav {
+  margin: 0 auto;
+  background-color: #6feaf2;
+}
+.navigation {
+  display: flex;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+  font-family: 'Raleyway', sans-serif;
+  margin: auto;
+}
+.navigation li {
+  flex: 1 1 auto;
+}
+.navigation a {
+  text-align: center;
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.navigation li:first-child {
+  display: none;
+}
+
+#fiveday {
+  background-color: #126a70;
+  text-align: center;
+}
+#fiveday li {
+  display: inline-block;
+  padding: 13px 40px;
+  list-style: none;
+  font-size: 15px;
+}
+
+#heroimage {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.summary {
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#heroimage img {
+  width: 100%;
+  height: auto;
+}
+#article {
+  background-color: #126a70;
+  color: white;
+  padding: 2em;
+}
+#article h3 {
+  font-size: 2em;
+}
+#article img {
+  float: right;
+  padding: 0px 1em 0px 0px;
+}
+
+#locationmap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  text-align: center;
+  padding: 2em;
+  color: #000000;
+  background-color: #6feaf2;
+}
+
+.rcolumm {
+  grid-column: 2/2;
+}
+.lcolumn {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+footer {
+  background-color: #126a70;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+}
+h1 {
+  color: #346c70;
+  font-family: 'Poppins', sans-serif;
+}
+h2 {
+  color: #1eb2bd;
+  font-family: 'Poppins', sans-serif;
+}
+h3 {
+  font-family: 'Raleyway', sans-serif;
+}
+
+p {
+  font-family: 'Raleyway', sans-serif;
+}
+@media only screen and (max-width: 760px) {
+  button {
+    display: block;
+    background-color: transparent;
+  }
+  /* .hide {
+    display: none;
+  } */
+  .summary {
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+  #heroimage img {
+    width: 100%;
+    height: auto;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    overflow: hidden;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+  .articleimg {
+    float: none;
+    width: 100%;
+  }
+  #locationmap {
+    display: block;
+  }
+  .socialimg {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wireframe of preston weather page for WDD230.">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Preston Weather Page</title>
+</head>
+<body>
+    <div class="content">
+    <header>
+        <img class="icon" src="images/icon.png" alt="Sun logo">
+        <div class="title">
+            <h1>Weather or No</h1>
+            <h2>Is today the day?</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+        <!-- <button onclick="toggleMenu1()">&#9776</button> -->
+        <div id="heroimage" class="hide">
+            
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>Sky: Sunny</p>
+                <p>Temperature:85F</p>
+            </div>
+            <img src="images/banner.jpg" alt="hero image banner">
+        </div>
+        <h2>Five Day Forcast</h2>
+        <!-- <button onclick="toggleMenu2()">&#9776</button> -->
+        <div id="fiveday" class="hide">
+            <ul>
+                <li><img src="images/phsmall.jpg" alt="forecast temperature"></li>
+                <li><img src="images/phsmall.jpg" alt="forecast temperature"></li>
+                <li><img src="images/phsmall.jpg" alt="forecast temperature"></li>
+                <li><img src="images/phsmall.jpg" alt="forecast temperature"></li>
+                <li><img src="images/phsmall.jpg" alt="forecast temperature"></li>
+            </ul>
+        </div>
+        <h2>Article</h2>
+        <!-- <button onclick="toggleMenu3()">&#9776</button> -->
+        <div id="article">
+            <img class="articleimg" src="images/ph.jpg" alt="image for article">
+            <h3>Preston</h3>
+            <p>On ent aut et modicitis ent ut lab imaxim lacepuda diaspic tianderi corepere, quiaepero 
+                te commos accaept atectia con plicatibus asiminulpa ducidit recusam conserc hitaectios 
+                eossinum, as volor acea quis con repudae cum exerum faccupta voluptatus doluptaquis 
+                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
+                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
+                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
+                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae 
+                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
+                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
+                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
+                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae
+            </p>
+                
+        </div>
+    
+        <h2>Contact Information</h2>
+        <!-- <button onclick="toggleMenu4()">&#9776</button> -->
+       
+    </main>
+    <footer>
+        <div id="locationmap" class="hide">
+            <div class="rcolumn">
+                <p>111 location street <br>
+                gmail@gmail.com<br>
+                123-4567-8901<br><br>
+                Follow us on social platforms:</p>
+                <br>
+                <a href="#"><img src="images/phsmall.jpg" alt="twitter logo"></a>
+                <a href="#"><img src="images/phsmall.jpg" alt="youtube logo"></a>
+                <a href="#"><img src="images/phsmall.jpg" alt="facebook logo"></a>
+            </div>
+            <div class="lcolumn">
+                <img class="socialimg" src="images/ph.jpg" alt="weather map for location">
+            </div>
+        </div>
+        <span class= "tb">© <span id="date"></span> | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
+        <span class="last">Last Updated: </span><span class="bb" id="year"></span>
+    </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body> 
+</html>
