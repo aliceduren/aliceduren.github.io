@@ -10,10 +10,14 @@
     <title>Preston Weather Page</title>
 </head>
 <body>
-    <div class="announcement">
-
-    </div>
+    
     <div class="content">
+        <aside >
+            <h3 id="announcement">
+                Saturday = Preston Pancakes in the Park! <br>
+                9:00 a.m. Saturday at the city park pavilion.
+            </h3>
+        </aside>
     <header>
         <img class="icon" src="images/icon.png" alt="Sun logo">
         <div class="title">
@@ -25,7 +29,7 @@
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -114,8 +118,8 @@
                 <img class="socialimg" src="images/preston.png" alt="weather map for location">
             </div>
         </div>
-        <span class= "tb">© <span id="date"></span> | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
-        <span class="last">Last Updated: </span><span class="bb" id="year"></span>
+        <span class= "tb">© Weather or No | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
+        <span id="day"></span>, <span id="daynum"></span> <span id="month"></span> <span id="year"></span>
     </footer>
     </div>
     <script src="js/index.js"></script>

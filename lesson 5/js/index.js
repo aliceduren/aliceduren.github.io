@@ -17,10 +17,36 @@ window.onresize =() => {if(window.innerWidth > 760) mainnav.classList.remove('re
 // function toggleMenu4(){
 //   document.getElementById('locationmap').classList.toggle("hide");
 //   }
-const lastUp=document.lastModified;
+//topbanner
+const an= document.querySelector('#announcement');
 
-document.querySelector("#year").textContent=lastUp;
+const friday= new Date();
+let dayOfWeek;
+dayOfWeek=friday.getDay();
+if (dayOfWeek == 3) {
+   an.classList.toggle("pancakes");
+}
+else{
+    an.classList.remove("pancakes");
+    an.style.display="none";
+}
+//Wednesday, 24 July 2020
+const dayNames=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+let dayObj= new Date()
+let weekday=dayNames[dayObj.getDay()];
+document.getElementById('day').textContent=weekday;
+
+let dayn=new Date()
+let daynum=dayn.getDate()
+document.getElementById("daynum").textContent=daynum
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"];
+let m=new Date()
+let n=monthNames[m.getMonth()];
+document.getElementById("month").textContent=n
 
 let x=new Date()
 let y=x.getFullYear()
-document.getElementById("date").textContent=y
+document.getElementById("year").textContent=y
+
