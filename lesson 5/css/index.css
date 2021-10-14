@@ -43,7 +43,6 @@ header {
   background-color: #126a70;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 nav {
   margin: 0 auto;
@@ -86,6 +85,7 @@ nav .active {
   width: 100%;
   border-collapse: collapse;
   padding: 13px 40px;
+  color: white;
   margin: auto;
 }
 th,

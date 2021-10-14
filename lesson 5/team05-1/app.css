@@ -1,0 +1,36 @@
+body {
+  background-image: url(images/resource-1.jpg);
+  background-repeat: no-repeat, repeat;
+  /* background-size: 750px 1334px; */
+  height: 1300px;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#content {
+  margin: 0;
+  padding: 25px;
+  max-width: 700px;
+  background: rgb(97, 181, 228);
+  background: linear-gradient(
+    0deg,
+    rgb(87, 177, 230) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  bottom: 0;
+}
+#right {
+  display: float;
+  text-align: right;
+}
+#images img {
+  width: 100px;
+}
+
+@media only screen and (max-width: 375px) {
+}
