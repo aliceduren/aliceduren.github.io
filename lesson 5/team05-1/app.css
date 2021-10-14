@@ -26,7 +26,7 @@ body {
 }
 #right {
   display: float;
-  text-align: right;
+  float: right;
 }
 #images img {
   width: 100px;
