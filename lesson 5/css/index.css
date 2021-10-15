@@ -87,11 +87,13 @@ nav .active {
   padding: 13px 40px;
   color: white;
   margin: auto;
+  table-layout: fixed;
 }
 th,
 td {
   border: 1px solid black;
   background-color: ffffff;
+  overflow: hidden;
 }
 /* tr {
 } */
@@ -124,7 +126,7 @@ td {
 }
 #article img {
   float: right;
-  padding: 0px 1em 0px 0px;
+  padding-left: 1em;
 }
 
 #locationmap {
@@ -175,9 +177,11 @@ p {
   #fiveday img {
     width: 100%;
   }
+
   .articleimg {
     float: none;
     width: 100%;
+    padding-bottom: 1em;
   }
 }
 @media only screen and (max-width: 760px) {
@@ -193,7 +197,6 @@ p {
     flex-direction: column;
   }
   .summary {
-    position: absolute;
     width: auto;
     height: auto;
   }
@@ -222,6 +225,7 @@ p {
     display: block;
   }
   .socialimg {
+    padding-top: 1em;
     width: 100%;
     height: auto;
   }
