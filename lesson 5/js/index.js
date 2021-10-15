@@ -23,7 +23,7 @@ const an= document.querySelector('#announcement');
 const friday= new Date();
 let dayOfWeek;
 dayOfWeek=friday.getDay();
-if (dayOfWeek == 5) {
+if (dayOfWeek == 3) {
    an.classList.toggle("pancakes");
 }
 else{
