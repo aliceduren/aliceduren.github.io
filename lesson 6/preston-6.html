@@ -40,16 +40,16 @@
         <h1>Preston Idaho</h1>
         <!-- <button onclick="toggleMenu1()">&#9776</button> -->
         <div id="heroimage" class="hide">
-            
+            <div id="imgsize"></div>
             <div class="summary">
                 <h3>Weather Summary</h3>
                 <p>Sky: Sunny</p>
-                <p>Temperature:85°F</p>
-                <p>Wind Chill: 51°F</p>
+                <p>Temperature: 60°F</p>
+                <p>Wind Chill: <span id="wind"></span>°F</p>
                 <p>Humidity: 50%</p>
-                <p>Wind Speed: <span id="wind">f</span> mph</p>
+                <p>Wind Speed: 12 mph</p>
             </div>
-            <img src="images/pex.jpg" alt="hero image banner">
+            <img src="images/heroimg.jpeg" alt="hero image banner">
         </div>
         <h2>Five Day Forcast</h2>
         <!-- <button onclick="toggleMenu2()">&#9776</button> -->
@@ -123,5 +123,6 @@
     </footer>
     </div>
     <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
 </body> 
 </html>
