@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wireframe of preston weather page for WDD230.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Preston Weather Page</title>
+</head>
+<body>
+    
+    <div class="content">
+        <aside >
+            <h3 id="announcement">
+                Saturday = Preston Pancakes in the Park! <br>
+                9:00 a.m. Saturday at the city park pavilion.
+            </h3>
+        </aside>
+    <header>
+        <img class="icon" src="images/icon.png" alt="Sun logo">
+        <div class="title">
+            <h1>Weather or No</h1>
+            <h2>Is today the day?</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+        <!-- <button onclick="toggleMenu1()">&#9776</button> -->
+        <div id="heroimage" class="hide">
+            
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>Sky: Sunny</p>
+                <p>Temperature:85°F</p>
+                <p>Wind Chill: °F</p>
+                <p>Humidity: 50%</p>
+                <p>Wind Speed: 10 mph</p>
+            </div>
+            <img src="images/pex.jpg" alt="hero image banner">
+        </div>
+        <h2>Five Day Forcast</h2>
+        <!-- <button onclick="toggleMenu2()">&#9776</button> -->
+        <div id="fiveday" class="hide">
+            <table>
+                <tr class="days">
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td><img src="images/sunny.png" alt="forecast temperature"></td>
+                    <td><img src="images/cloudy.png" alt="forecast temperature"></td>
+                    <td><img src="images/sunny.png" alt="forecast temperature"></td>
+                    <td><img src="images/thunder.png" alt="forecast temperature"></td>
+                    <td><img src="images/cloudy.png" alt="forecast temperature"></td>
+                </tr>
+                <tr>
+                    <td>90°F</td>
+                    <td>82°F</td>
+                    <td>89°F</td>
+                    <td>76°F</td>
+                    <td>83°F</td>
+                </tr>
+            </table>
+        </div>
+        <h2>Article</h2>
+        <!-- <button onclick="toggleMenu3()">&#9776</button> -->
+        <div id="article">
+            <img class="articleimg" src="images/art.jpg" alt="image for article">
+            <h3>Preston</h3>
+            <p>On ent aut et modicitis ent ut lab imaxim lacepuda diaspic tianderi corepere, quiaepero 
+                te commos accaept atectia con plicatibus asiminulpa ducidit recusam conserc hitaectios 
+                eossinum, as volor acea quis con repudae cum exerum faccupta voluptatus doluptaquis 
+                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
+                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
+                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
+                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae 
+                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
+                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
+                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
+                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae
+            </p>
+                
+        </div>
+    
+        <h2>Contact Information</h2>
+        <!-- <button onclick="toggleMenu4()">&#9776</button> -->
+       
+    </main>
+    <footer>
+        <div id="locationmap" class="hide">
+            <div class="rcolumn">
+                <p>615 S Center Street<br>
+                weatherorno@gmail.com<br>
+                209-640-4520<br><br>
+                Follow us on social platforms:</p>
+                <br>
+                <a href="#"><img src="images/twit.png" alt="twitter logo"></a>
+                <a href="#"><img src="images/you.png" alt="youtube logo"></a>
+                <a href="#"><img src="images/face.png" alt="facebook logo"></a>
+            </div>
+            <div class="lcolumn">
+                <img class="socialimg" src="images/preston.png" alt="weather map for location">
+            </div>
+        </div>
+        <span class= "tb">© Weather or No | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
+        <span id="day"></span>, <span id="daynum"></span> <span id="month"></span> <span id="year"></span>
+    </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body> 
+</html>
