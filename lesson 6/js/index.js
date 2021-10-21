@@ -18,6 +18,11 @@ window.onresize =() => {if(window.innerWidth > 760) mainnav.classList.remove('re
 //   document.getElementById('locationmap').classList.toggle("hide");
 //   }
 //topbanner
+WebFont.load({
+    google:{
+        families:['Poppins']
+    }
+});
 const an= document.querySelector('#announcement');
 
 const friday= new Date();

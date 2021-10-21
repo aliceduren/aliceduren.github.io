@@ -34,8 +34,6 @@ button {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.2em;
-
-  justify-content: center;
 }
 .title h1 {
   color: white;
@@ -44,7 +42,13 @@ header {
   background-color: #126a70;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+.image {
+  min-width: 100vw;
+  max-width: 100vw;
+}
+
 nav {
   margin: 0 auto;
   background-color: #6feaf2;
@@ -97,21 +101,21 @@ td {
 }
 /* tr {
 } */
-
-#heroimage {
-  display: block;
-  text-align: center;
-  position: relative;
-}
 .summary {
   position: absolute;
   top: 0px;
-  margin: 0;
+  margin: 20px;
   padding: 0.5rem;
   font-size: 0.8rem;
   color: #000000;
   background-color: rgba(255, 255, 255, 0.5);
 }
+#heroimage {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
 #heroimage img {
   width: 100%;
   height: auto;
@@ -166,13 +170,32 @@ h2 {
 h3 {
   font-family: 'Raleyway', sans-serif;
 }
-
+.test {
+  margin-bottom: 0px !important;
+}
 p {
   font-family: 'Raleyway', sans-serif;
 }
 @media only screen and (max-width: 900px) {
   .content {
     width: 100%;
+  }
+  #Limgsize {
+    display: none;
+  }
+  #Simgize {
+    display: none;
+  }
+  #Mimgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+  }
+  .summary {
+    width: 25%;
+    height: auto;
   }
   #fiveday img {
     width: 100%;
@@ -192,13 +215,15 @@ p {
   /* .hide {
     display: none;
   } */
-  .title {
-    display: flex;
-    flex-direction: column;
+  #Mimgsize {
+    display: none;
   }
-  .summary {
-    width: auto;
-    height: auto;
+  #Simgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
   }
   #heroimage img {
     width: 100%;
@@ -225,6 +250,7 @@ p {
     display: block;
   }
   .socialimg {
+    border: 5px solid black;
     padding-top: 1em;
     width: 100%;
     height: auto;

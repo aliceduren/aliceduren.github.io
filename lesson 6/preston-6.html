@@ -21,8 +21,7 @@
     <header>
         <img class="icon" src="images/icon.png" alt="Sun logo">
         <div class="title">
-            <h1>Weather or No</h1>
-            <h2>Is today the day?</h2>
+            <h1 class="test">Weather or No<br>Is today the day?</h1>
         </div>
     </header>
     <nav>
@@ -39,8 +38,11 @@
     <main>
         <h1>Preston Idaho</h1>
         <!-- <button onclick="toggleMenu1()">&#9776</button> -->
+        <!-- <div id="Limgsize">Large</div>
+        <div id="Mimgsize">Medium</div>
+        <div id="Simgsize">Small</div> -->
         <div id="heroimage" class="hide">
-            <div id="imgsize"></div>
+            
             <div class="summary">
                 <h3>Weather Summary</h3>
                 <p>Sky: Sunny</p>
@@ -49,7 +51,13 @@
                 <p>Humidity: 50%</p>
                 <p>Wind Speed: 12 mph</p>
             </div>
-            <img src="images/heroimg.jpeg" alt="hero image banner">
+            <picture class="image">
+                <source media="(max-width: 300px)" srcset="https://fakeimg.pl/200x100/2c3e50/">
+                <source media="(max-width: 600px)" srcset="https://fakeimg.pl/500x250/2c3e50/">
+                <source media="(max-width: 900px)" srcset="https://fakeimg.pl/800x400/2c3e50/">
+                <source media="(max-width: 1300px)" srcset="https://fakeimg.pl/1200x600/2c3e50/">
+                <img src="images/heroimg.jpeg" alt="hero image banner" class="image">
+            </picture>
         </div>
         <h2>Five Day Forcast</h2>
         <!-- <button onclick="toggleMenu2()">&#9776</button> -->
