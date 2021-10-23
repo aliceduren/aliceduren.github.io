@@ -20,8 +20,13 @@ button {
   text-align: center;
   font-size: 1.5em;
   background-color: white;
-  color: #032d30;
   margin: 0%;
+  color: #126a70;
+}
+.first-sen {
+  color: #000000;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 .icon {
   border: 5px solid black;
@@ -39,14 +44,21 @@ button {
   color: white;
 }
 header {
-  background-color: #126a70;
+  background: rgb(111, 234, 242);
+  background: linear-gradient(
+    180deg,
+    rgba(111, 234, 242, 1) 0%,
+    rgba(18, 106, 112, 1) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.today {
+  font-size: 0.7em;
+  color: #48e5f0;
+}
 .image {
-  /* min-width: 100vw;
-  max-width: 100vw; */
   width: 100%;
 }
 
@@ -143,8 +155,11 @@ td {
   margin-bottom: 10px;
   color: #000000;
   background-color: #6feaf2;
+  border: 3px solid black;
 }
-
+.socialimg {
+  border: 3px solid black;
+}
 .rcolumm {
   grid-column: 2/2;
 }
@@ -251,7 +266,6 @@ p {
     display: block;
   }
   .socialimg {
-    border: 5px solid black;
     padding-top: 1em;
     width: 100%;
     height: auto;
