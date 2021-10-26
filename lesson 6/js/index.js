@@ -51,9 +51,4 @@ let x=new Date()
 let y=x.getFullYear()
 document.getElementById("year").textContent=y
 
-src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-WebFont.load({
-    google:{
-        families:['Poppins','Raleway']
-    }
-});
+
