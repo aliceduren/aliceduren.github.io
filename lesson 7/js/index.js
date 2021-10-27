@@ -17,6 +17,7 @@ const imgObserver = new IntersectionObserver ((entries,imgObserver) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {return;}
         else {
+            entry.target.style.animation = 'bounce ease-in 500ms'
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
         }
@@ -27,7 +28,6 @@ images.forEach (image => {
     imgObserver.observe(image);
 })//observe each image
 //BLAAAAAHHHhh
-
 //BLaahhhhhhhhhhhhh
 const hambutton = document.querySelector('.ham');
 const mainnav= document.querySelector('.navigation')

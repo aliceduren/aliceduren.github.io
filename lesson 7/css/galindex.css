@@ -101,9 +101,11 @@ div.gallery {
   align-items: center;
   justify-items: center;
 }
-img {
+[data-src] {
   width: 100%;
   height: auto;
+  animation-timing-function: ease-in;
+  animation-duration: 500ms;
 }
 footer {
   background-color: #126a70;
