@@ -98,9 +98,13 @@ nav .active {
 div.gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  align-items: center;
+  justify-items: center;
 }
-
+img {
+  width: 100%;
+  height: auto;
+}
 footer {
   background-color: #126a70;
   color: rgb(255, 255, 255);
@@ -142,18 +146,11 @@ p {
     right: 50px;
     padding: 1.5rem;
   }
-  .summary {
-    width: 25%;
-    height: auto;
-  }
-  #fiveday img {
-    width: 100%;
-  }
-
-  .articleimg {
-    float: none;
-    width: 100%;
-    padding-bottom: 1em;
+  div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
   }
 }
 @media only screen and (max-width: 760px) {
@@ -195,12 +192,10 @@ p {
     display: none;
   }
 
-  #locationmap {
-    display: block;
-  }
-  .socialimg {
-    padding-top: 1em;
-    width: 100%;
-    height: auto;
+  div.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
   }
 }
