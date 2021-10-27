@@ -27,8 +27,7 @@ const imgObserver = new IntersectionObserver ((entries,imgObserver) => {
 images.forEach (image => {
     imgObserver.observe(image);
 })//observe each image
-//BLAAAAAHHHhh
-//BLaahhhhhhhhhhhhh
+
 const hambutton = document.querySelector('.ham');
 const mainnav= document.querySelector('.navigation')
 
