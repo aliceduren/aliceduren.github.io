@@ -102,18 +102,39 @@ div.gallery {
   justify-items: center;
 }
 /* [data-src] {
-  width: 100%;
-  height: auto;
   animation-timing-function: ease-in;
   animation-duration: 500ms;
 } */
-img.blur {
+figure img[data-src] {
   filter: blur(0.2em);
 }
 
-img {
+figure img {
   filter: blur(0em);
   transition: filter 0.5s;
+  width: 100%;
+  height: auto;
+}
+#locationmap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  text-align: center;
+  padding: 2em;
+  margin-bottom: 10px;
+  color: #000000;
+  background-color: #6feaf2;
+  border: 3px solid black;
+}
+.socialimg {
+  border: 3px solid black;
+}
+.rcolumm {
+  grid-column: 2/2;
+}
+.lcolumn {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 footer {
