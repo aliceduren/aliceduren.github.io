@@ -2,10 +2,10 @@ body {
   text-align: center;
 }
 
-/* div img[data-src] {
-  opacity: 0;
-} */
-div img[src] {
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+figure img {
   filter: blur(0em);
-  transition: opacity 0.5s;
+  transition: filter 0.5s;
 }

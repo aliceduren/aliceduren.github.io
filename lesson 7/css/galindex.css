@@ -97,7 +97,8 @@ nav .active {
 }
 div.gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   align-items: center;
   justify-items: center;
 }
@@ -108,12 +109,38 @@ div.gallery {
 figure img[data-src] {
   filter: blur(0.2em);
 }
-
+figure img:hover {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 70%);
+}
 figure img {
   filter: blur(0em);
   transition: filter 0.5s;
   width: 100%;
   height: auto;
+}
+.gallery-img-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.gallery-img-2 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+.gallery-img-3 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+}
+.gallery-img-4 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+.gallery-img-5 {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+.gallery-img-6 {
+  grid-column: 3 / span 2;
+  grid-row: 4;
 }
 #locationmap {
   display: grid;
