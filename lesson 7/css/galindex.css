@@ -101,12 +101,21 @@ div.gallery {
   align-items: center;
   justify-items: center;
 }
-[data-src] {
+/* [data-src] {
   width: 100%;
   height: auto;
   animation-timing-function: ease-in;
   animation-duration: 500ms;
+} */
+img.blur {
+  filter: blur(0.2em);
 }
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
 footer {
   background-color: #126a70;
   color: rgb(255, 255, 255);
