@@ -106,10 +106,14 @@ div.gallery {
   animation-timing-function: ease-in;
   animation-duration: 500ms;
 } */
+figure {
+  border: 1px solid black;
+  text-align: center;
+}
 figure img[data-src] {
   filter: blur(0.2em);
 }
-figure img:hover {
+figure:hover {
   box-shadow: 5px 5px 5px rgb(0 0 0 / 70%);
 }
 figure img {
@@ -216,6 +220,9 @@ p {
   .content {
     width: 100%;
   }
+  .imgdes {
+    display: none;
+  }
   #Limgsize {
     display: none;
   }
@@ -228,6 +235,9 @@ p {
     top: 25px;
     right: 50px;
     padding: 1.5rem;
+  }
+  figure:hover {
+    box-shadow: none;
   }
   div.gallery {
     display: grid;
