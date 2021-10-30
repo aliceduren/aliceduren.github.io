@@ -135,12 +135,36 @@ figure img {
   grid-row: 3;
 }
 .gallery-img-5 {
-  grid-column: 1 / span 2;
-  grid-row: 4;
+  grid-column: 1 / span 3;
+  grid-row: 3;
 }
 .gallery-img-6 {
+  grid-column: 3;
+  grid-row: 5;
+}
+.gallery-img-7 {
+  grid-column: 4;
+  grid-row: 3;
+}
+.gallery-img-8 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 2;
+}
+.gallery-img-9 {
   grid-column: 3 / span 2;
   grid-row: 4;
+}
+.gallery-img-10 {
+  grid-column: 4;
+  grid-row: 5;
+}
+.gallery-img-11 {
+  grid-column: 1 / span 2;
+  grid-row: 6;
+}
+.gallery-img-12 {
+  grid-column: 3 / span 2;
+  grid-row: 6;
 }
 #locationmap {
   display: grid;
@@ -256,5 +280,8 @@ p {
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+  }
+  #locationmap {
+    display: block;
   }
 }
