@@ -138,3 +138,105 @@ h3 {
 p {
   font-family: 'Raleyway', sans-serif;
 }
+@media only screen and (max-width: 900px) {
+  .content {
+    width: 100%;
+  }
+  #Limgsize {
+    display: none;
+  }
+  #Simgize {
+    display: none;
+  }
+  #Mimgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  button {
+    display: block;
+    background-color: transparent;
+  }
+  /* .hide {
+      display: none;
+    } */
+  #Mimgsize {
+    display: none;
+  }
+  #Simgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+  }
+  #heroimage img {
+    width: 100%;
+    height: auto;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    overflow: hidden;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+  #locationmap {
+    display: block;
+  }
+}
+@media only screen and (max-width: 760px) {
+  button {
+    display: block;
+    background-color: transparent;
+  }
+  /* .hide {
+        display: none;
+      } */
+  #Mimgsize {
+    display: none;
+  }
+  #Simgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+  }
+  #heroimage img {
+    width: 100%;
+    height: auto;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    overflow: hidden;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+  #locationmap {
+    display: block;
+  }
+}
