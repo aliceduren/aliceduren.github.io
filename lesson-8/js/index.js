@@ -27,6 +27,16 @@ window.onresize = () => {
 //   }
 //topbanner
 
+// function bleh() {
+//   console.log('hello');
+//   let f = stormyForm;
+//   let namey = f.name.value;
+//   let p = document.createElement('p');
+//   p.innerHTML = `Hello ${namey}`;
+//   //   document.body.appendChild();
+// }
+// if(p.innerHTML.length >20)
+
 const an = document.querySelector('#announcement');
 
 const friday = new Date();

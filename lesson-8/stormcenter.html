@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Storm Center Weather Page for WDD230.">
     <title>Storm Center</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script>
@@ -35,7 +36,78 @@
             <li><a href="../lesson 7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        
+        <form name="stormyFormy"  action="/lesson-8/thanks.html" onSubmit="bleh(); return false">
+            <div class="form-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="names" minlength="5" pattern="([A-Z])\w+" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="user@email.org" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip" name="zip" required>
+                <label for="date">Storm Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="type">Storm Type:</label>
+                <input list="browsers" id="stype" name="stype">
+                <datalist id="browsers">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                  </datalist>
+                <label for="sever">Storm Severity:</label>
+                <input type="range" id="server" name="sever" min="1" max="10" list="ticks" list>
+                <datalist id="ticks">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <label for="reigion">Storm Reigion:</label>
+                <datalist id="reigionlist">
+                    <option value="Preston"></option>
+                    <option value="Soda Springs"></option>
+                    <option value="Fish Haven"></option>
+                </datalist>
+                <label>
+                    <select name="cities" id="select cities">
+                        <option value="" disabled selected>Select Reigion</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <div>
+                    <h2>In Danger Level</h2>
+                    
+                    <input type="radio" id="yes" name="danger" value="yes">
+                    <label for="yes">Yes</label>
+                    
+                    <input type="radio" id="maybe" name="danger" value="maybe">
+                    <label for="maybe">Maybe</label>
+                    
+                    <input type="radio" id="no" name="danger" value="no">
+                    <label for="no">No</label>
+                </div>
+                <label for="danger">Comments:</label>
+                <textarea id="review" name="review"></textarea>
+                <br>
+                <input type="submit"></button>
+
+            </div>
+        </form>
+    </main>
     <footer>
         <div id="locationmap" class="hide">
             <div class="rcolumn">
