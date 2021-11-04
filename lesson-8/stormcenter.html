@@ -41,7 +41,7 @@
         <form name="stormyFormy"  action="/lesson-8/thanks.html" onSubmit="bleh(); return false">
             <div class="form-item">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="names" minlength="5" pattern="([A-Z])\w+" required>
+                <input type="text" id="name" name="names" minlength="5" pattern="[A-Za-z ]{3,50}" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="user@email.org" required>
                 <label for="phone">Phone Number:</label>
