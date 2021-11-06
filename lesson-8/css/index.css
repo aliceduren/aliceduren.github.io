@@ -118,6 +118,9 @@ input {
 textarea {
   width: 50%;
 }
+select {
+  font-family: inherit;
+}
 #locationmap {
   display: grid;
   grid-template-columns: 1fr 1fr;
