@@ -37,74 +37,95 @@
         </ul>
     </nav>
     <main>
-        
+        <h1>Storm Center</h1>
+        <h2>Use this form to notify us of the weather in your current city!</h2>
         <form name="stormyFormy"  action="/lesson-8/thanks.html" onSubmit="bleh(); return false">
             <div class="form-item">
-                <h1>Storm Center Form</h1>
-                <label for="name"><h3>Name:</h3></label>
-                <input type="text" id="name" name="names" minlength="5" pattern="[A-Za-z ]{3,50}" required>
-                <label for="email"><h3>Email:</h3></label>
-                <input type="email" id="email" name="email" placeholder="user@email.org" required>
-                <label for="phone"><h3>Phone Number:</h3></label>
-                <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
-                <label for="zip"><h3>Zip Code:</h3></label>
-                <input type="number" id="zip" name="zip" required>
-                <label for="date"><h3>Storm Date:</h3></label>
-                <input type="date" id="date" name="date">
-                <label for="type"><h3>Storm Type:</h3></label>
-                <input list="browsers" id="type" name="type">
-                <datalist id="browsers">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                  </datalist>
-                <label for="sever"><h3>Storm Severity:</h3></label>
-                <input type="range" id="server" name="sever" min="1" max="10" list="ticks">
-                <datalist id="ticks">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
-                <label for="reigion"><h3>Storm Reigion:</h3></label>
-                <datalist id="reigion">
-                    <option value="Preston"></option>
-                    <option value="Soda Springs"></option>
-                    <option value="Fish Haven"></option>
-                </datalist>
-                <label>
-                    <select name="cities" id="cities">
-                        <option value="" disabled selected>Select Reigion</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Soda Springs">Soda Springs</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                    </select>
-                </label>
                 <div>
-                    <h3>In Danger Level</h3>
-                    
-                    <input type="radio" id="yes" name="danger" value="yes">
-                    <label for="yes">Yes</label>
-                    
-                    <input type="radio" id="maybe" name="danger" value="maybe">
-                    <label for="maybe">Maybe</label>
-                    
-                    <input type="radio" id="no" name="danger" value="no">
-                    <label for="no">No</label>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="names" minlength="5" pattern="[A-Za-z ]{3,50}" required>
                 </div>
-                <label for="danger"><h3>Comments:</h3></label>
-                <textarea id="review" name="review"></textarea>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="user@email.org" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
+                </div>
+                <div>
+                    <label for="zip">Zip Code:</label><br>
+                    <input type="number" id="zip" name="zip" required>
+                </div>
+                <div>
+                    <label for="date">Storm Date:</label><br>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div>
+                    <label for="type">Storm Type:</label><br>
+                    <input list="browsers" id="type" name="type">
+                    <datalist id="browsers">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="sever">Storm Severity:</label><br>
+                    <input type="range" id="server" name="sever" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value" list="ticks">
+                    <output>5</output>
+                    <datalist id="ticks">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="reigion">Storm Reigion:</label><br>
+                    <datalist id="reigion">
+                        <option value="Preston"></option>
+                        <option value="Soda Springs"></option>
+                        <option value="Fish Haven"></option>
+                    </datalist>
+                </div>
+                <div>
+                <label>
+                        <select name="cities" id="cities">
+                            <option value="" disabled selected>Select Reigion</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                </label>
+                </div><br>
+                <div>
+                    <label for="in-danger">In Danger Level:</label>
+                    <div class="level">
+                        <input type="radio" id="yes" name="danger" value="yes">
+                        <label for="yes">Yes</label>
+                        <br>
+                        <input type="radio" id="maybe" name="danger" value="maybe">
+                        <label for="maybe">Maybe</label>
+                        <br>
+                        <input type="radio" id="no" name="danger" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="danger"><h3>Comments:</h3></label>
+                    <textarea id="review" name="review" rows="5"></textarea>
+                </div>
                 <br>
-                <input type="submit">
+                <input class="button" type="submit" value="Submit Form">
 
             </div>
         </form>
