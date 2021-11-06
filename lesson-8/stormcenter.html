@@ -40,17 +40,18 @@
         
         <form name="stormyFormy"  action="/lesson-8/thanks.html" onSubmit="bleh(); return false">
             <div class="form-item">
-                <label for="name">Name:</label>
+                <h1>Storm Center Form</h1>
+                <label for="name"><h3>Name:</h3></label>
                 <input type="text" id="name" name="names" minlength="5" pattern="[A-Za-z ]{3,50}" required>
-                <label for="email">Email:</label>
+                <label for="email"><h3>Email:</h3></label>
                 <input type="email" id="email" name="email" placeholder="user@email.org" required>
-                <label for="phone">Phone Number:</label>
+                <label for="phone"><h3>Phone Number:</h3></label>
                 <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
-                <label for="zip">Zip Code:</label>
+                <label for="zip"><h3>Zip Code:</h3></label>
                 <input type="number" id="zip" name="zip" required>
-                <label for="date">Storm Date:</label>
+                <label for="date"><h3>Storm Date:</h3></label>
                 <input type="date" id="date" name="date">
-                <label for="type">Storm Type:</label>
+                <label for="type"><h3>Storm Type:</h3></label>
                 <input list="browsers" id="stype" name="stype">
                 <datalist id="browsers">
                     <option value="Flash Flood">
@@ -59,7 +60,7 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                   </datalist>
-                <label for="sever">Storm Severity:</label>
+                <label for="sever"><h3>Storm Severity:</h3></label>
                 <input type="range" id="server" name="sever" min="1" max="10" list="ticks" list>
                 <datalist id="ticks">
                     <option value="0">0</option>
@@ -74,7 +75,7 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </datalist>
-                <label for="reigion">Storm Reigion:</label>
+                <label for="reigion"><h3>Storm Reigion:</h3></label>
                 <datalist id="reigionlist">
                     <option value="Preston"></option>
                     <option value="Soda Springs"></option>
@@ -89,7 +90,7 @@
                     </select>
                 </label>
                 <div>
-                    <h2>In Danger Level</h2>
+                    <h3>In Danger Level</h3>
                     
                     <input type="radio" id="yes" name="danger" value="yes">
                     <label for="yes">Yes</label>
@@ -100,7 +101,7 @@
                     <input type="radio" id="no" name="danger" value="no">
                     <label for="no">No</label>
                 </div>
-                <label for="danger">Comments:</label>
+                <label for="danger"><h3>Comments:</h3></label>
                 <textarea id="review" name="review"></textarea>
                 <br>
                 <input type="submit"></button>
