@@ -23,7 +23,7 @@
 
 function newJoke() {
   try {
-    fetch('https://byui-cit230.github.io/weather/data/towndata.json' {
+    fetch('https://byui-cit230.github.io/weather/data/towndata.json', {
       method: 'GET',
       headers: {
         Accept: 'application/json',
@@ -39,10 +39,4 @@ function newJoke() {
 function drawJoke(joke) {
   div = document.getElementById('joke');
   div.innerHTML = joke;
-
-  if (joke.length >= 80) {
-    div.style.fontSize = '24pt';
-  } else {
-    div.style.fontSize = '42pt';
-  }
 }
