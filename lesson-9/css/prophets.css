@@ -1,0 +1,8 @@
+.cards {
+  display: block;
+  background-color: khaki;
+  border: solid 1px black;
+}
+section {
+  align-content: center;
+}

@@ -1,42 +1,30 @@
-// async function getData() {
-//   await fetch()
-//     .then((response) => response.json())
-//     .then((data) => console.log(data));
-//   return response;
-// }
-// let jsonData = getData();
-
-// function getKeyByValue(object, value) {
-//   return Object.keys(object).find((key) => object[key] === value);
-// }
-
-// const jsonResponse = await fetch(
-//   'https://byui-cit230.github.io/weather/data/towndata.json'
-// )
-//   .then((response) => response.json())
-//   .then((responseData) => {
-//     return responseData;
-//   })
-//   .catch((error) => console.log(error));
-// let h2 = document.createElement('h2');
-// h2.innerHTML = jsonResponse.name;
-
-function newJoke() {
-  try {
-    fetch('https://byui-cit230.github.io/weather/data/towndata.json', {
-      method: 'GET',
-      headers: {
-        Accept: 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => drawJoke(data.joke));
-  } catch (e) {
-    console.log(e);
+async function myFetch() {
+  let response = await fetch(
+    'https://byui-cit230.github.io/weather/data/towndata.json'
+  );
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
   }
+  return await response.json();
 }
 
-function drawJoke(joke) {
-  div = document.getElementById('joke');
-  div.innerHTML = joke;
-}
+myFetch()
+  .then((jsonData) => {
+    function getKeyByValue(object, value) {
+      return Object.keys(object).find((key) => object[key] === value);
+    }
+    console.log(getKeyByValue(jsonData, 'Preston'));
+
+    // console.log(jsonData.towns[0].motto);
+
+    let h1 = document.createElement('h1');
+    h1.innerHTML = jsonData.towns[2].name;
+
+    let h3 = document.createElement('h3');
+    h3.innerHTML = jsonData.towns[3].motto;
+
+    document.getElementById('FishHaven').appendChild(h1);
+    document.querySelector('#readyForClass').innerHTML =
+      jsonData.towns[3].motto;
+  })
+  .catch((e) => console.log(e));
