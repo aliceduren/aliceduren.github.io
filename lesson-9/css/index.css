@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
+.content {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+main {
+  padding: 1.2em;
+}
+body {
+  background-color: rgb(189, 185, 185);
+  font-family: 'Poppins', sans-serif;
+}
+button {
+  display: none;
+}
+.pancakes {
+  display: block;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: white;
+  margin: 0%;
+  color: #126a70;
+}
+.first-sen {
+  color: #000000;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+.icon {
+  border: 5px solid black;
+  background-color: white;
+  width: 6em;
+  height: auto;
+  margin: 10px 10px;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.title h1 {
+  color: white;
+}
+header {
+  background: rgb(111, 234, 242);
+  background: linear-gradient(
+    180deg,
+    rgba(111, 234, 242, 1) 0%,
+    rgba(18, 106, 112, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.today {
+  font-size: 0.7em;
+  color: #48e5f0;
+}
+.image {
+  width: 100%;
+}
+
+nav {
+  margin: 0 auto;
+  background-color: #6feaf2;
+}
+.navigation {
+  display: flex;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+  font-family: 'Raleyway', sans-serif;
+  margin: auto;
+}
+.navigation li {
+  flex: 1 1 auto;
+}
+.navigation a {
+  text-align: center;
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.navigation li:first-child {
+  display: none;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+nav .active {
+  background-color: rgb(255, 255, 255);
+}
+form {
+  display: block;
+  border: 1px solid black;
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+}
+.form-item,
+label {
+  padding-bottom: 1em;
+}
+.form-item,
+input {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.level {
+  width: 10px;
+}
+textarea {
+  width: 50%;
+}
+select {
+  font-family: inherit;
+}
+#locationmap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  text-align: center;
+  padding: 2em;
+  margin-bottom: 10px;
+  color: #000000;
+  background-color: #6feaf2;
+  border: 3px solid black;
+}
+.socialimg {
+  border: 3px solid black;
+}
+.rcolumm {
+  grid-column: 2/2;
+}
+.lcolumn {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+footer {
+  background-color: #126a70;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+}
+h1 {
+  color: #346c70;
+  font-family: 'Poppins', sans-serif;
+}
+h2 {
+  color: #1eb2bd;
+  font-family: 'Poppins', sans-serif;
+}
+h3 {
+  font-family: 'Raleyway', sans-serif;
+}
+p {
+  font-family: 'Raleyway', sans-serif;
+}
+@media only screen and (max-width: 900px) {
+  .content {
+    width: 100%;
+  }
+
+  #Limgsize {
+    display: none;
+  }
+  #Simgize {
+    display: none;
+  }
+  #Mimgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  button {
+    display: block;
+    background-color: transparent;
+  }
+  /* .hide {
+      display: none;
+    } */
+  #Mimgsize {
+    display: none;
+  }
+  #Simgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+  }
+  #heroimage img {
+    width: 100%;
+    height: auto;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    overflow: hidden;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+  #locationmap {
+    display: block;
+  }
+}
+@media only screen and (max-width: 760px) {
+  button {
+    display: block;
+    background-color: transparent;
+  }
+  /* .hide {
+        display: none;
+      } */
+  #Mimgsize {
+    display: none;
+  }
+  #Simgsize {
+    position: absolute;
+    color: rgb(255, 133, 133);
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+  }
+  #heroimage img {
+    width: 100%;
+    height: auto;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    overflow: hidden;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+  #locationmap {
+    display: block;
+  }
+}
