@@ -28,4 +28,4 @@ myFetch()
   })
   .catch((e) => console.log(e));
 
-// document.getElementById('myTable').innerHTML = '<tr><td>value</td></tr>';
+document.getElementById('myTable').innerHTML = '<tr><td>value</td></tr>';
