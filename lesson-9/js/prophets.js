@@ -19,11 +19,7 @@ fetch(requestURL)
       let image = document.createElement('img');
       image.setAttribute('src', prophets[i].imageurl);
       image.alt =
-        prophets[i].name +
-        ' ' +
-        prophets[i].lastname +
-        '-' +
-        prophets[i].length;
+        prophets[i].name + ' ' + prophets[i].lastname + '-' + prophets[i].order;
 
       card.appendChild(h2);
       card.appendChild(h3);
