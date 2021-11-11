@@ -18,6 +18,13 @@ fetch(requestURL)
       a_h3.textContent = 'Place of Birth: ' + prophets[i].birthplace;
       let image = document.createElement('img');
       image.setAttribute('src', prophets[i].imageurl);
+      image.alt =
+        prophets[i].name +
+        ' ' +
+        prophets[i].lastname +
+        '-' +
+        prophets[i].length;
+
       card.appendChild(h2);
       card.appendChild(h3);
       card.appendChild(a_h3);
