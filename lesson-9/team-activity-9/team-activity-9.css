@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  /* border: ridge; */
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 100%;
+  border: 5px solid white;
+}
+section {
+  background-color: cadetblue;
+  padding: 2em;
+  margin: 10px;
+  border: 5px solid black;
+}
+#btn {
+  padding: 2em;
+  text-align: center;
+}
