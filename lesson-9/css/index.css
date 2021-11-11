@@ -6,6 +6,8 @@
 }
 main {
   padding: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 body {
   background-color: rgb(189, 185, 185);
@@ -95,31 +97,13 @@ nav ul li a:hover {
 nav .active {
   background-color: rgb(255, 255, 255);
 }
-form {
-  display: block;
-  border: 1px solid black;
-  text-align: left;
-  width: 80%;
-  margin-left: 10%;
+div {
+  background-color: #126a70;
+  width: 95%;
 }
-.form-item,
-label {
-  padding-bottom: 1em;
-}
-.form-item,
-input {
+.townphotos {
   width: 100%;
-  padding: 1em;
-  box-sizing: border-box;
-}
-.level {
-  width: 10px;
-}
-textarea {
-  width: 50%;
-}
-select {
-  font-family: inherit;
+  border: 3px solid black;
 }
 #locationmap {
   display: grid;
@@ -168,7 +152,18 @@ p {
   .content {
     width: 100%;
   }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main:nth-child(odd) img {
+    grid-column: 2;
+  }
 
+  main:nth-child(odd) .info {
+    grid-column: 1;
+    grid-row: 1;
+  }
   #Limgsize {
     display: none;
   }

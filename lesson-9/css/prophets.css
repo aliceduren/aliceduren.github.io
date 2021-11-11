@@ -16,9 +16,10 @@ body {
   text-align: center;
 }
 section {
-  width: 100%;
+  width: 95%;
   background-color: khaki;
   border: solid 1px black;
+  margin-bottom: 10px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.425);
 }
 
