@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
 .content {
-  background-color: rgb(160, 31, 31);
+  background-color: white;
   width: 80%;
   margin: 0 auto;
 }
@@ -43,7 +43,7 @@ button {
   font-size: 1.2em;
 }
 .title h1 {
-  color: rgb(0, 0, 0);
+  color: white;
 }
 header {
   background: rgb(111, 234, 242);
