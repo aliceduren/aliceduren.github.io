@@ -1,7 +1,5 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-// function redirect() {
-//   location.replace('../lesson 6/preston-6.html');
-// }
+
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -39,10 +37,16 @@ fetch(requestURL)
         card.appendChild(train);
         document.querySelector('.containers').appendChild(card);
         if (towns[i].name == 'Preston') {
-          // let result = image.link('href', '../lesson 6/preston-6.html');
-          // document.querySelector('section').innerHTML = result;
-          document.addEventListener('click', redirect());
+          document
+            .querySelector('.containers')
+            .addEventListener(
+              'onclick',
+              redirect('../lesson 6/preston-6.html')
+            );
         }
       }
     }
   });
+function redirect(destination) {
+  window.location.href = destination;
+}
