@@ -14,6 +14,7 @@ fetch(requestURL)
         towns[i].name == 'Fish Haven'
       ) {
         let card = document.createElement('section');
+        card.setAttribute('class', towns[i].name);
         let tname = document.createElement('h2');
         tname.textContent = towns[i].name;
         let tmotto = document.createElement('h3');
@@ -27,6 +28,7 @@ fetch(requestURL)
         let image = document.createElement('img');
         image.setAttribute('src', 'images/' + towns[i].photo);
         image.setAttribute('class', 'townimg');
+
         image.alt = towns[i].photo;
 
         card.appendChild(image);
@@ -35,17 +37,13 @@ fetch(requestURL)
         card.appendChild(tfound);
         card.appendChild(tpop);
         card.appendChild(train);
+
         document.querySelector('.containers').appendChild(card);
-        if (towns[i].name == 'Preston') {
-          document
-            .querySelector('.containers')
-            .addEventListener(
-              'onclick',
-              redirect('../lesson 6/preston-6.html')
-            );
-        }
       }
     }
+    document
+      .querySelector('.Preston')
+      .addEventListener('onclick', redirect('../lesson 6/preston-6.html'));
   });
 function redirect(destination) {
   window.location.href = destination;
