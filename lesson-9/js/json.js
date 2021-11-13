@@ -41,10 +41,8 @@ fetch(requestURL)
         document.querySelector('.containers').appendChild(card);
       }
     }
-    document
-      .querySelector('.Preston')
-      .addEventListener('onclick', redirect('../lesson 6/preston-6.html'));
   });
+//idk how to make this work :(
 function redirect(destination) {
   window.location.href = destination;
 }
