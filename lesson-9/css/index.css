@@ -177,12 +177,12 @@ p {
     width: 50%;
     height: 40%;
     float: right;
+    padding-left: 10px;
   }
   section:nth-of-type(even) img {
     width: 50%;
     height: 40%;
     float: left;
-    padding-right: 10 px;
   }
   section:nth-of-type(even) {
     text-align: right;
@@ -218,6 +218,7 @@ p {
   section:nth-of-type(odd) img {
     width: 100%;
     float: none;
+    padding-left: 0;
   }
   section:nth-of-type(even) img {
     width: 100%;
