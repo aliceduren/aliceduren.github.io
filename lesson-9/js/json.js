@@ -1,5 +1,7 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
+// function redirect() {
+//   location.replace('../lesson 6/preston-6.html');
+// }
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -14,8 +16,6 @@ fetch(requestURL)
         towns[i].name == 'Fish Haven'
       ) {
         let card = document.createElement('section');
-        let makediv = document.createElement('div');
-        makediv.setAttribute('class', 'info');
         let tname = document.createElement('h2');
         tname.textContent = towns[i].name;
         let tmotto = document.createElement('h3');
@@ -38,6 +38,11 @@ fetch(requestURL)
         card.appendChild(tpop);
         card.appendChild(train);
         document.querySelector('.containers').appendChild(card);
+        if (towns[i].name == 'Preston') {
+          // let result = image.link('href', '../lesson 6/preston-6.html');
+          // document.querySelector('section').innerHTML = result;
+          document.addEventListener('click', redirect());
+        }
       }
     }
   });
