@@ -43,6 +43,6 @@ fetch(requestURL)
     }
   });
 //idk how to make this work :(
-function redirect(destination) {
-  window.location.href = destination;
-}
+// function redirect(destination) {
+//   window.location.href = destination;
+// }
