@@ -29,6 +29,7 @@ fetch(requestURL)
         let image = document.createElement('img');
         image.setAttribute('src', 'images/' + towns[i].photo);
         image.setAttribute('class', 'townimg');
+        image.alt = towns[i].photo;
 
         card.appendChild(image);
         card.appendChild(tname);
