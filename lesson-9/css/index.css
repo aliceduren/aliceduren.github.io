@@ -6,6 +6,8 @@
 }
 main {
   padding: 1.2em;
+  max-width: 90%;
+  margin: 20px;
 }
 body {
   background-color: rgb(189, 185, 185);
@@ -60,13 +62,15 @@ header {
 }
 
 .containers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
 section {
-  width: 90%;
-  background-color: #126a70;
-  /* width: 300 px; */
+  width: 30%;
+  background-color: #6feaf2;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+  border: 2px solid black;
 }
 nav {
   margin: 0 auto;
@@ -103,8 +107,7 @@ nav .active {
 }
 
 .townimg {
-  width: 300px;
-  border: 3px solid black;
+  width: 100%;
 }
 #locationmap {
   display: grid;
@@ -136,11 +139,11 @@ footer {
   padding: 1em;
 }
 h1 {
-  color: #346c70;
+  color: #686b6b;
   font-family: 'Poppins', sans-serif;
 }
 h2 {
-  color: #1eb2bd;
+  color: #126a70;
   font-family: 'Poppins', sans-serif;
 }
 h3 {
@@ -154,18 +157,35 @@ p {
     width: 100%;
   }
   main {
-    display: grid;
+    width: 100%;
   }
   .containers {
-    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: 0.5rem auto;
+    border: 1px solid #bbb;
+    background-color: #eee;
+    display: block;
   }
-  .containers img {
-    grid-column: 2;
-  }
-  .containers,
   section {
-    grid-column: 1;
-    grid-row: 1;
+    width: 90%;
+    padding: 2%;
+    text-align: left;
+    margin: 15px;
+  }
+
+  section:nth-of-type(odd) img {
+    width: 50%;
+    height: 40%;
+    float: right;
+  }
+  section:nth-of-type(even) img {
+    width: 50%;
+    height: 40%;
+    float: left;
+    padding-right: 10 px;
+  }
+  section:nth-of-type(even) {
+    text-align: right;
   }
   #Limgsize {
     display: none;
@@ -181,56 +201,30 @@ p {
     padding: 1.5rem;
   }
 }
-@media only screen and (max-width: 760px) {
+
+@media only screen and (max-width: 550px) {
   button {
     display: block;
     background-color: transparent;
   }
-  /* .hide {
-      display: none;
-    } */
-  #Mimgsize {
-    display: none;
+  main {
+    display: block;
   }
-  #Simgsize {
-    position: absolute;
-    color: rgb(255, 133, 133);
-    top: 25px;
-    right: 50px;
-    padding: 1.5rem;
+  section {
+    text-align: center;
+    margin: 10px;
   }
-  #heroimage img {
+  section:nth-of-type(odd) img {
     width: 100%;
-    height: auto;
+    float: none;
   }
-  ul.navigation.responsive li {
-    display: block;
+  section:nth-of-type(even) img {
+    width: 100%;
+    float: none;
   }
-  nav {
-    display: block;
+  section:nth-of-type(even) {
+    text-align: center;
   }
-  .navigation {
-    overflow: hidden;
-    display: block;
-  }
-  .navigation li:first-child {
-    display: block;
-  }
-  .navigation li {
-    display: none;
-  }
-  #locationmap {
-    display: block;
-  }
-}
-@media only screen and (max-width: 760px) {
-  button {
-    display: block;
-    background-color: transparent;
-  }
-  /* .hide {
-        display: none;
-      } */
   #Mimgsize {
     display: none;
   }
