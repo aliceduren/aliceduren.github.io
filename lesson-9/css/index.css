@@ -202,13 +202,14 @@ p {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   button {
     display: block;
     background-color: transparent;
   }
   main {
     display: block;
+    margin: 0px;
   }
   section {
     text-align: center;
@@ -257,5 +258,8 @@ p {
   }
   #locationmap {
     display: block;
+  }
+  .socialimg {
+    width: 100%;
   }
 }
