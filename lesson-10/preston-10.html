@@ -53,34 +53,36 @@
             <picture class="image">
                 <source media="(max-width: 750px)" srcset="images/heroimgsmall.jpg">
                 <source media="(max-width: 900px)" srcset="images/heroimgmed.jpg">
-                <img src="images/heroimg.jpeg" alt="hero image banner" class="image">
+                <img src="images/heroimglarge.jpg" alt="hero image banner" class="image">
             </picture>
         </div>
         <h2>Five Day Forcast</h2>
         <!-- <button onclick="toggleMenu2()">&#9776</button> -->
         <div id="fiveday" class="hide">
             <table>
+                <tbody>
                 <tr class="days">
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
                 </tr>
                 <tr>
-                    <td id="tempimg"></td>
-                    <td><img src="images/cloudy.png" alt="forecast temperature"></td>
-                    <td><img src="images/sunny.png" alt="forecast temperature"></td>
-                    <td><img src="images/thunder.png" alt="forecast temperature"></td>
-                    <td><img src="images/cloudy.png" alt="forecast temperature"></td>
+                    <td><span id="imagesrc1"></span> <img id="icon1"></td>
+                    <td><span id="imagesrc2"></span> <img id="icon2"></td>
+                    <td><span id="imagesrc3"></span> <img id="icon3"></td>
+                    <td><span id="imagesrc4"></span> <img id="icon4"></td>
+                    <td><span id="imagesrc5"></span> <img id="icon5"></td>
                 </tr>
                 <tr>
-                    <td>90°F</td>
-                    <td>82°F</td>
-                    <td>89°F</td>
-                    <td>76°F</td>
-                    <td>83°F</td>
+                    <td><span id="temp1"></span>°F
+                        <td><span id="temp2"></span>°F
+                        <td><span id="temp3"></span>°F
+                        <td><span id="temp4"></span>°F
+                        <td><span id="temp5"></span>°F
                 </tr>
+                </tbody>
             </table>
         </div>
         <h2>Article</h2>
@@ -88,17 +90,22 @@
         <div id="article">
             <img class="articleimg" src="images/art.jpg" alt="image for article">
             <h3>Preston</h3>
-            <p>On ent aut et modicitis ent ut lab imaxim lacepuda diaspic tianderi corepere, quiaepero 
-                te commos accaept atectia con plicatibus asiminulpa ducidit recusam conserc hitaectios 
-                eossinum, as volor acea quis con repudae cum exerum faccupta voluptatus doluptaquis 
-                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
-                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
-                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
-                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae 
-                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
-                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
-                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
-                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae
+            <p>The Bear River Massacre occurred in 1863 at a point a few miles 
+                northwest of Preston. The Bear River Massacre Site is a National
+                 Historic Landmark. In 1866, Latter-day Saint (LDS, or Mormon) 
+                 pioneers arrived in the northern end of the Cache Valley, 
+                 stretching across southeastern Idaho and northeastern Utah. 
+                 They founded a community in that location and named it Worm Creek,
+                  but in 1881 changed it to Preston because leaders of the LDS Church
+                   in Salt Lake City objected to the name "Worm Creek" being 
+                   part of any church congregation's name. The name 
+                   Preston was suggested by a local member to honor 
+                   William B. Preston, who at the time was president of 
+                   the LDS Church's Cache Stake.
+                    It was not until the 1880s while William
+                     C. Parkinson was serving as the bishop 
+                     of the Preston LDS Ward that a regular 
+                     townsite was laid out. (https://en.wikipedia.org/wiki/Preston,_Idaho)
             </p>
                 
         </div>
