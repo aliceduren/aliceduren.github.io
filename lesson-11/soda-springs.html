@@ -8,7 +8,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/soda.css">
     <script src="js/index.js" defer></script>
-    <script src="js/weatherapi.js" defer></script>
+    <script src="js/soda.js" defer></script>
     <title>Preston Weather Page</title>
 </head>
 <body>
@@ -38,7 +38,7 @@
         </ul>
     </nav>
     <main>
-        <h1>Preston Idaho</h1>
+        <h1>Soda Springs</h1>
         <!-- <button onclick="toggleMenu1()">&#9776</button> -->
         <div id="heroimage" class="hide">
             
@@ -53,34 +53,36 @@
             <picture class="image">
                 <source media="(max-width: 750px)" srcset="images/heroimgsmall.jpg">
                 <source media="(max-width: 900px)" srcset="images/heroimgmed.jpg">
-                <img src="images/heroimg.jpeg" alt="hero image banner" class="image">
+                <img src="images/banner (2).jpg" alt="hero image banner" class="image">
             </picture>
         </div>
         <h2>Five Day Forcast</h2>
         <!-- <button onclick="toggleMenu2()">&#9776</button> -->
         <div id="fiveday" class="hide">
             <table>
+                <tbody>
                 <tr class="days">
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
                 </tr>
                 <tr>
-                    <td id="tempimg"></td>
-                    <td><img src="images/cloudy.png" alt="forecast temperature"></td>
-                    <td><img src="images/sunny.png" alt="forecast temperature"></td>
-                    <td><img src="images/thunder.png" alt="forecast temperature"></td>
-                    <td><img src="images/cloudy.png" alt="forecast temperature"></td>
+                    <td><span id="imagesrc1"></span> <img id="icon1" alt="weather icon"></td>
+                    <td><span id="imagesrc2"></span> <img id="icon2" alt="weather icon"></td>
+                    <td><span id="imagesrc3"></span> <img id="icon3" alt="weather icon"></td>
+                    <td><span id="imagesrc4"></span> <img id="icon4" alt="weather icon"></td>
+                    <td><span id="imagesrc5"></span> <img id="icon5" alt="weather icon"></td>
                 </tr>
                 <tr>
-                    <td>90°F</td>
-                    <td>82°F</td>
-                    <td>89°F</td>
-                    <td>76°F</td>
-                    <td>83°F</td>
+                    <td><span id="temp1"></span>°F
+                        <td><span id="temp2"></span>°F
+                        <td><span id="temp3"></span>°F
+                        <td><span id="temp4"></span>°F
+                        <td><span id="temp5"></span>°F
                 </tr>
+                </tbody>
             </table>
         </div>
         <h2>Article</h2>
