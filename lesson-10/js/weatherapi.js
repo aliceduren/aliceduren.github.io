@@ -1,6 +1,10 @@
 function windchill(t, s) {
   let f = 35.74 + 0.6215 * t - 35.75 * s ** 0.16 + 0.4275 * t * s ** 0.16;
-  return Math.round(f);
+  if (f <= 50 && s > 3) {
+    return Math.round(f);
+  } else {
+    return 'N/A';
+  }
 }
 let apiURL =
   'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=a6bea4e16102442de7b4c070cffb4029';
@@ -15,8 +19,9 @@ fetch(apiURL)
     );
     document.getElementById('hum').textContent = jsObject.main.humidity;
     document.getElementById('ws').textContent = jsObject.wind.speed;
-    document.getElementById('wind').textContent = Math.round(
-      windchill(jsObject.main.temp, jsObject.wind.speed)
+    document.getElementById('wind').textContent = windchill(
+      jsObject.main.temp,
+      jsObject.wind.speed
     );
   });
 const forecastAPI =
@@ -83,7 +88,6 @@ switch (today) {
     document.getElementById('day5').textContent = 'Monday';
     break;
   case 5:
-    document.body.onload = addElement;
     document.getElementById('day1').textContent = 'Friday';
     document.getElementById('day2').textContent = 'Saturday';
     document.getElementById('day3').textContent = 'Sunday';

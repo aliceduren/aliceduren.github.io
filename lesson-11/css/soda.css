@@ -114,14 +114,23 @@ td {
 }
 /* tr {
 } */
+
 .summary {
-  position: absolute;
-  top: 0px;
-  margin: 20px;
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  color: #000000;
-  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding-bottom: 1em;
+  grid-row: 1;
+}
+.summary table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 13px 40px;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  table-layout: fixed;
+  background-color: #aaf9ff;
+}
+.summary td {
+  padding: 1em;
 }
 #heroimage {
   display: block;
@@ -133,7 +142,13 @@ td {
   width: 100%;
   height: auto;
 }
+#eventsandarticle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 #article {
+  grid-column: 2;
+  grid-row: 1 / span 2;
   background-color: #126a70;
   color: white;
   padding: 2em;
@@ -141,11 +156,32 @@ td {
 #article h3 {
   font-size: 2em;
 }
-#article img {
-  float: right;
-  padding-left: 1em;
+.try {
+  display: flex;
+  justify-content: center;
+}
+.articleimg {
+  grid-column: 2;
+  grid-row: 2;
+  width: 95%;
+  border: 1px solid black;
 }
 
+.events {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+}
+
+section {
+  grid-column: 1;
+  width: 95%;
+  height: fit-content;
+  background-color: #6feaf2;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+  border: 2px solid black;
+  margin-bottom: 2em;
+}
 #locationmap {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -209,17 +245,21 @@ p {
     right: 50px;
     padding: 1.5rem;
   }
+  th,
+  td {
+    font-size: 0.5em;
+  }
   .summary {
-    width: 25%;
     height: auto;
   }
   #fiveday img {
     width: 100%;
   }
-
+  .try {
+    display: flex;
+    justify-content: center;
+  }
   .articleimg {
-    float: none;
-    width: 100%;
     padding-bottom: 1em;
   }
 }
@@ -245,6 +285,7 @@ p {
     width: 100%;
     height: auto;
   }
+
   ul.navigation.responsive li {
     display: block;
   }
@@ -260,6 +301,15 @@ p {
   }
   .navigation li {
     display: none;
+  }
+  #eventsandarticle {
+    display: block;
+  }
+  #article {
+    display: block;
+  }
+  .articleimg {
+    margin-top: 10px;
   }
 
   #locationmap {

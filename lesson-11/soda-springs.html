@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Preston weather page for WDD230.">
+    <meta name="description" content="Soda Springs weather page for WDD230.">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/soda.css">
     <script src="js/index.js" defer></script>
     <script src="js/soda.js" defer></script>
-    <title>Preston Weather Page</title>
+    <title>Soda Springs Weather Page</title>
 </head>
 <body>
     
@@ -41,21 +41,36 @@
         <h1>Soda Springs</h1>
         <!-- <button onclick="toggleMenu1()">&#9776</button> -->
         <div id="heroimage" class="hide">
-            
             <div class="summary">
-                <h3>Weather Summary</h3>
-                <p>Sky: <span id="yay"></span></p>
-                <p>Temperature: <span id="temp"></span>°F</p>
-                <p>Wind Chill: <span id="wind"></span>°F</p>
-                <p>Humidity: <span id="hum"></span>%</p>
-                <p>Wind Speed: <span id="ws"></span> mph</p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Sky</th>
+                        <th>Temperature</th>
+                        <th>Wind Chill</th>
+                        <th>Humidity</th>
+                        <th>Wind Speed</th>
+                    </tr>
+                    <tr>
+                        <td><span id="yay"></span></td>
+                        <td><span id="temp"></span>°F</td>
+                        <td><span id="yay"><span id="wind"></span>°F</span></td>
+                        <td><span id="yay"><span id="hum"></span>%</span></td>
+                        <td><span id="yay"><span id="ws"></span> mph</span></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <picture class="image">
-                <source media="(max-width: 750px)" srcset="images/heroimgsmall.jpg">
-                <source media="(max-width: 900px)" srcset="images/heroimgmed.jpg">
-                <img src="images/banner (2).jpg" alt="hero image banner" class="image">
+                <source media="(max-width: 750px)" srcset="images/banner(2)small.jpg">
+                <source media="(max-width: 900px)" srcset="images/banner(2)med.jpg">
+                <img src="images/banner(2).jpg" alt="hero image banner" class="image">
             </picture>
+            
+            
         </div>
+        
         <h2>Five Day Forcast</h2>
         <!-- <button onclick="toggleMenu2()">&#9776</button> -->
         <div id="fiveday" class="hide">
@@ -85,26 +100,43 @@
                 </tbody>
             </table>
         </div>
-        <h2>Article</h2>
+        <h2>Events</h2>
+        
+        <div id="eventsandarticle">
+            <div class="events"></div>
+            
         <!-- <button onclick="toggleMenu3()">&#9776</button> -->
+
         <div id="article">
-            <img class="articleimg" src="images/art.jpg" alt="image for article">
-            <h3>Preston</h3>
-            <p>On ent aut et modicitis ent ut lab imaxim lacepuda diaspic tianderi corepere, quiaepero 
-                te commos accaept atectia con plicatibus asiminulpa ducidit recusam conserc hitaectios 
-                eossinum, as volor acea quis con repudae cum exerum faccupta voluptatus doluptaquis 
-                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
-                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
-                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
-                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae 
-                arum velia sunt min non rescia possequi unt, officae laciis naturescid quam auditibusam 
-                aut autemque nonserrum que volupicae volorum quuntis autestia sit dolenec erissi berum 
-                exerore rferestisque ducil ipit maion porest aut aut mi, venderum am, untium autem. Si 
-                dolorec totatur aliqui od que et qui test aut ut id utatquoditae dolorem faccati busdae
+            
+            
+            <h3>Soda Springs</h3>
+            <p>The city is named for the hundreds of natural springs of carbonated 
+                water that are located in and around the city. The springs were 
+                well known to Native Americans and were a famous landmark along 
+                the Oregon Trail in the middle 19th century. Today the city is 
+                also known as the location of the Soda Springs Geyser, which was 
+                unleashed in 1934 when "town fathers" were looking for hot water 
+                for a "hot pool" bathing attraction. Instead they drilled into a 
+                chamber of highly pressurized carbon dioxide gas and cold water 
+                and the geyser was released. After running for weeks, and flooding 
+                the downtown area, it was capped and manually released when 
+                requested as a tourist attraction. Now it is let loose every 
+                hour on the hour by a timed release valve. Its height and 
+                volume have not decreased after many years. There are viewing 
+                platforms at either end of the travertine mound where the 
+                geyser erupts. Interpretive signs are located on the platforms
+                explaining this phenomenon.
+                (https://en.wikipedia.org<br>/wiki/Soda_Springs,_Idaho)
             </p>
                 
         </div>
-    
+        <div class="try">
+        <img class="articleimg" src="images/siteimg(2).jpg" alt="image for article">
+    </div>
+        </div>
+        
+        
         <h2>Contact Information</h2>
         <!-- <button onclick="toggleMenu4()">&#9776</button> -->
        
@@ -122,7 +154,7 @@
                 <a href="#"><img src="images/face.png" alt="facebook logo"></a>
             </div>
             <div class="lcolumn">
-                <img class="socialimg" src="images/preston.png" alt="weather map for location">
+                <img class="socialimg" src="images/soda.png" alt="weather map for location">
             </div>
         </div>
         <span class= "tb">© Weather or No | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
