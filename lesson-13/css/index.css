@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Montserrat:wght@300&display=swap');
+/* font-family: 'Libre Franklin', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+#content {
+  background-color: rgb(231, 43, 43);
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+.icon {
+  background-color: #fff;
+  border: 1px solid red;
+  height: 100px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 100px;
+}
+.headcon {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+}
+nav {
+  margin: 0 auto;
+  background-color: #6feaf2;
+}
+.navigation {
+  display: flex;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+  font-family: 'Raleyway', sans-serif;
+  margin: auto;
+}
+.navigation li {
+  flex: 1 1 auto;
+}
+.navigation a {
+  text-align: center;
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.navigation li:first-child {
+  display: none;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+nav .active {
+  background-color: rgb(238, 0, 0);
+}
+footer {
+  background-color: #126a70;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+}
+@media only screen and (max-width: 750px) {
+  button {
+    display: block;
+    background-color: transparent;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    overflow: hidden;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+}

@@ -1,144 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Storm Center Weather Page for WDD230.">
-    <title>Hptel Reservation</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page for Temple Inn and Suites.">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
     <script src="js/index.js" defer></script>
-  </head>
-  <body>
-      <div class="content">
-        <aside >
-            <h3 id="announcement">
-                <span class="first-sen">Saturday = Preston Pancakes in the Park!</span> <br>
-                9:00 a.m. Saturday at the city park pavilion.
-            </h3>
-        </aside>
-    <header>
-        <img class="icon" src="images/icon.png" alt="Sun logo">
-        <div class="title">
-            <h1 class="test">Weather or No<br><span class="today">Is today the day?</span></h1>
-        </div>
-    </header>
+    <title>Reservations</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="headcon">
+                <img class="icon" src="images/icon.png" alt="Temple Logo">
+            <div class="title">
+                <h1 class="test">Temple Inn and Suites</h1>
+                <span class="book">Book Your Stay!</span>
+            </div>
+            </div>   
+        </header>
+    
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a href="../lesson-9/index.html">Home</a></li>
-            <li><a href="../lesson-10/preston-10.html">Preston</a></li>
-            <li><a href="../lesson-11/soda-springs.html">Soda Springs</a></li>
-            <li><a href="../lesson-11/fish-haven.html">Fish Haven</a></li>
-            <li class="active"><a href="#">Storm Center</a></li>
-            <li><a href="../lesson 7/gallery-7.html">Gallery</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li class="active"><a href="#">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Storm Center</h1>
-        <h2>Use this form to notify us of the weather in your current city!</h2>
-        <form name="stormyFormy"  action="/lesson-8/thanks.html" onSubmit="bleh(); return false">
-            <div class="form-item">
-                <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="names" minlength="5" pattern="[A-Za-z ]{3,50}" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="user@email.org" required>
-                </div>
-                <div>
-                    <label for="phone">Phone Number:</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
-                </div>
-                <div>
-                    <label for="zip">Zip Code:</label><br>
-                    <input type="number" id="zip" name="zip" required>
-                </div>
-                <div>
-                    <label for="date">Storm Date:</label><br>
-                    <input type="date" id="date" name="date">
-                </div>
-                <div>
-                    <label for="type">Storm Type:</label><br>
-                    <input list="browsers" id="type" name="type">
-                    <datalist id="browsers">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist>
-                </div>
-                <div>
-                    <label for="sever">Storm Severity:</label><br>
-                    <input type="range" id="server" name="sever" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value" list="ticks">
-                    <output>5</output>
-                    <datalist id="ticks">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </datalist>
-                </div>
-                <div>
-                    <label for="reigion">Storm Reigion:</label><br>
-                    <datalist id="reigion">
-                        <option value="Preston"></option>
-                        <option value="Soda Springs"></option>
-                        <option value="Fish Haven"></option>
-                    </datalist>
-                </div>
-                <div>
-                <label>
-                        <select name="cities" id="cities">
-                            <option value="" disabled selected>Select Reigion</option>
-                            <option value="Preston">Preston</option>
-                            <option value="Soda Springs">Soda Springs</option>
-                            <option value="Fish Haven">Fish Haven</option>
-                        </select>
-                </label>
-                </div><br>
-                <div>
-                    <label for="in-danger">In Danger Level:</label>
-                    <div class="level">
-                        <input type="radio" id="yes" name="danger" value="yes">
-                        <label for="yes">Yes</label>
-                        <br>
-                        <input type="radio" id="maybe" name="danger" value="maybe">
-                        <label for="maybe">Maybe</label>
-                        <br>
-                        <input type="radio" id="no" name="danger" value="no">
-                        <label for="no">No</label>
-                    </div>
-                </div>
-                <div>
-                    <label for="danger">Comments:</label><br>
-                    <textarea id="review" name="review" rows="5"></textarea>
-                </div>
-                <br>
-                <input class="button" type="submit" value="Submit Form">
-
-            </div>
-        </form>
-    </main>
+    <main></main>
     <footer>
-        <span class= "tb">© Weather or No | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
+        <span class= "tb">© Temple Inn and Suites | Alice Duren | Idaho | <a class= "byui" href="https://www.byui.edu/online">BYUI Online Learning</a></span> <br>
         <span id="day"></span>, <span id="daynum"></span> <span id="month"></span> <span id="year"></span>
     </footer>
-      </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</div>
     <script> WebFont.load({
         google:{
-            families:['Poppins','Raleway']
+            families:['Libre Franklin','Montserrat']
         }
     });</script>
-  </body>
+</body>
 </html>
