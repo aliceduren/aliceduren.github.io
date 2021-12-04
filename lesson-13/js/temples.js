@@ -1,4 +1,4 @@
-fetch('js/temples2.json')
+fetch('https://nathansbradshaw.github.io/temples2.json')
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
@@ -14,11 +14,15 @@ fetch('js/temples2.json')
       let p = document.createElement('p');
       p.textContent = 'Address: ' + jsObject[i].address1;
       let p2 = document.createElement('p');
-      p2.textContent = 'City: ' + jsObject[i].city;
+      p2.textContent = 'Services: ' + jsObject[i].services[0];
       let p3 = document.createElement('p');
-      p3.textContent = 'State: ' + jsObject[i].state;
+      p3.textContent = jsObject[i].services[1];
       let p4 = document.createElement('p');
-      p4.textContent = 'Zipcode: ' + jsObject[i].zip;
+      p4.textContent = jsObject[i].services[2];
+      let p5 = document.createElement('p');
+      p5.textContent = jsObject[i].services[3];
+      let p6 = document.createElement('p');
+      p6.textContent = jsObject[i].Summary.facts[0];
 
       card.appendChild(image);
       card.appendChild(h2);
@@ -27,7 +31,8 @@ fetch('js/temples2.json')
       card.appendChild(p2);
       card.appendChild(p3);
       card.appendChild(p4);
-      //   card.appendChild(p);
+      card.appendChild(p5);
+      card.appendChild(p6);
 
       document.querySelector('div.cards').appendChild(card);
     }

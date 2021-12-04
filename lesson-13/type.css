@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Montserrat:wght@300&display=swap');
+/* font-family: 'Libre Franklin', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+table {
+  font-family: 'Montserrat', sans-serif;
+  width: 300px;
+}
+tr,
+td {
+  border: 1px solid black;
+  overflow: hidden;
+  width: 100%;
+  padding: 0.3em;
+}
+#sam1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(158, 45, 1);
+}
+#sam2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  color: rgb(158, 45, 1);
+}
+#sam3 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: rgb(158, 45, 1);
+}
+#sam4 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  color: rgb(246, 189, 38);
+}
+#sam5 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  color: rgb(255, 162, 144);
+}
+#sam6 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  color: rgb(158, 45, 1);
+}
+#sam7 {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}

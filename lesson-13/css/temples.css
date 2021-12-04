@@ -5,11 +5,15 @@
 }
 section {
   width: 30%;
-  background-color: #6feaf2;
+  background-color: rgb(158, 45, 1);
+
+  padding: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
   border: 2px solid black;
+  margin: 1.4rem;
 }
 section,
 img {
   width: 100%;
+  border: 2px solid black;
 }
