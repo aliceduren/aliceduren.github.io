@@ -37,3 +37,85 @@ fetch('https://nathansbradshaw.github.io/temples2.json')
       document.querySelector('div.cards').appendChild(card);
     }
   });
+
+function windchill(t, s) {
+  let f = 35.74 + 0.6215 * t - 35.75 * s ** 0.16 + 0.4275 * t * s ** 0.16;
+  if (f <= 50 && s > 3) {
+    return Math.round(f);
+  } else {
+    return 'N/A';
+  }
+}
+
+let apiURL1 =
+  'https://api.openweathermap.org/data/2.5/weather?id=5596475&units=imperial&appid=a6bea4e16102442de7b4c070cffb4029';
+let apiURL2 =
+  'https://api.openweathermap.org/data/2.5/weather?id=5605242&units=imperial&appid=a6bea4e16102442de7b4c070cffb4029';
+let apiURL3 =
+  'https://api.openweathermap.org/data/2.5/weather?id=4393217&units=imperial&appid=a6bea4e16102442de7b4c070cffb4029';
+let apiURL4 =
+  'https://api.openweathermap.org/data/2.5/weather?id=4544379&units=imperial&appid=a6bea4e16102442de7b4c070cffb4029';
+
+fetch(apiURL1)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    document.getElementById('yay').textContent = jsObject.weather[0].main;
+    document.getElementById('temp').textContent = Math.round(
+      jsObject.main.temp
+    );
+    document.getElementById('hum').textContent = jsObject.main.humidity;
+    document.getElementById('ws').textContent = jsObject.wind.speed;
+    document.getElementById('wind').textContent = windchill(
+      jsObject.main.temp,
+      jsObject.wind.speed
+    );
+  });
+
+fetch(apiURL2)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    document.getElementById('yay2').textContent = jsObject.weather[0].main;
+    document.getElementById('temp2').textContent = Math.round(
+      jsObject.main.temp
+    );
+    document.getElementById('hum2').textContent = jsObject.main.humidity;
+    document.getElementById('ws2').textContent = jsObject.wind.speed;
+    document.getElementById('wind2').textContent = windchill(
+      jsObject.main.temp,
+      jsObject.wind.speed
+    );
+  });
+
+fetch(apiURL3)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    document.getElementById('yay3').textContent = jsObject.weather[0].main;
+    document.getElementById('temp3').textContent = Math.round(
+      jsObject.main.temp
+    );
+    document.getElementById('hum3').textContent = jsObject.main.humidity;
+    document.getElementById('ws3').textContent = jsObject.wind.speed;
+    document.getElementById('wind3').textContent = windchill(
+      jsObject.main.temp,
+      jsObject.wind.speed
+    );
+  });
+
+fetch(apiURL4)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    document.getElementById('yay4').textContent = jsObject.weather[0].main;
+    document.getElementById('temp4').textContent = Math.round(
+      jsObject.main.temp
+    );
+    document.getElementById('hum4').textContent = jsObject.main.humidity;
+    document.getElementById('ws4').textContent = jsObject.wind.speed;
+    document.getElementById('wind4').textContent = windchill(
+      jsObject.main.temp,
+      jsObject.wind.speed
+    );
+  });

@@ -19,6 +19,9 @@
   width: 50%;
   height: auto;
   float: right;
+  margin: 0em 0em 1em 1em;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
 }
 .templesum {
   grid-column: 2;

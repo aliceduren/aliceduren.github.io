@@ -1,0 +1,32 @@
+.hero {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+}
+.food {
+  background-color: rgb(158, 45, 1);
+  color: white;
+  padding: 2em;
+}
+.foodimg {
+  width: 20%;
+  float: right;
+  margin-left: 1em;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+}
+.setup {
+  background-color: rgb(158, 45, 1);
+  color: white;
+  padding: 2em;
+}
+.setupimg {
+  width: 20%;
+  float: left;
+  margin-right: 1em;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+}

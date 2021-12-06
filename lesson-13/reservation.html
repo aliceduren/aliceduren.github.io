@@ -7,7 +7,7 @@
     <meta name="description" content="Home Page for Temple Inn and Suites.">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/reservation.css">
     <script src="js/index.js" defer></script>
     <title>Reservations</title>
 </head>
@@ -34,43 +34,18 @@
         </ul>
     </nav>
     <main><h1>Reservation Page</h1>
-        <h2>Use this form to notify us of the weather in your current city!</h2>
-        <form name="stormyFormy"  action="thankyou.html" onSubmit="bleh(); return false">
+        <h2>Book your stay at your nearest temple hotel!</h2>
+        <form name="resevertionform"  action="thankyou.html" onSubmit="bleh(); return false">
             <div class="form-item">
                 <div>
-                    <div>
-                        <label for="date">Date:</label><br>
-                        <input type="date" id="date" name="date">
-                    </div>
-                    <div>
-                        <label for="numpeople">Number of People:</label><br>
-                        <input type="number" id="numpep" name="numpep" required>
-                        
-                    </div>
-                    <div>
-                    <label for="suitetype">Suite Type:</label><br>
-                    <datalist id="suitetype">
-                        <option value="One-Person"></option>
-                        <option value="Two-Person"></option>
-                        <option value="Three-Person"></option>
-                    </datalist>
-                    </div>
-                    <div>
-                        <label>
-                                <select name="cities" id="cities">
-                                    <option value="" disabled selected>Select Suite Type</option>
-                                    <option value="One-Person">One-Person</option>
-                                    <option value="Two-Person">Two-Person</option>
-                                    <option value="Three-Person">Three-Person</option>
-                                </select>
-                        </label>
-                        </div>
-                
-                <div>
-                    <label for="name">Full Name:</label><br>
+                <label for="name">Full Name:</label><br>
                     <input type="text" id="name" name="names" minlength="5" pattern="[A-Za-z ]{3,50}" required>
                 </div>
+                <div>
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date" name="date">
                 </div>
+               
                 <div>
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" placeholder="user@email.org" required>
@@ -79,10 +54,35 @@
                     <label for="phone">Phone Number:</label><br>
                     <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
                 </div>
+                
                 <div>
                     <label for="state">Home State or Country:</label><br>
                     <input type="text" id="state" name="states" minlength="5" pattern="[A-Za-z ]{3,50}" required>
                 </div>
+                <div>
+                    <label for="numpeople">Number of People:</label><br>
+                    <input type="number" id="numpep" name="numpep" required>
+                    
+                </div>
+                <div>
+                <label for="suitetype">Suite Type:</label><br>
+                <datalist id="suitetype">
+                    <option value="One-Person"></option>
+                    <option value="Two-Person"></option>
+                    <option value="Three-Person"></option>
+                </datalist>
+                </div>
+                <div>
+                    <label>
+                            <select name="cities" id="cities">
+                                <option value="" disabled selected>Select Suite Type</option>
+                                <option value="One-Person">One-Person</option>
+                                <option value="Two-Person">Two-Person</option>
+                                <option value="Three-Person">Three-Person</option>
+                            </select>
+                    </label>
+                    </div>
+                    
                 <div>
                     <label for="danger">Special Accommodations Or Comments:</label><br>
                     <textarea id="review" name="review" rows="5"></textarea>

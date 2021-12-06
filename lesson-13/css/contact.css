@@ -1,0 +1,32 @@
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+iframe {
+  border: 2px solid black;
+}
+.form-item,
+label {
+  padding-bottom: 1em;
+}
+.form-item,
+input {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.level {
+  width: 10px;
+}
+textarea {
+  width: 50%;
+}
+.phone {
+  text-align: center;
+}
+select {
+  font-family: inherit;
+}
+.comments {
+  font-family: inherit;
+}

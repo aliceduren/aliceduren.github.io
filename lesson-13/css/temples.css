@@ -4,16 +4,59 @@
   text-align: center;
 }
 section {
+  color: white;
   width: 30%;
   background-color: rgb(158, 45, 1);
-
   padding: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
   border: 2px solid black;
   margin: 1.4rem;
 }
-section,
-img {
+section img {
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
+}
+.idsummary {
+  text-align: center;
+}
+.idsummary h3 {
+  text-align: left;
+  color: rgb(158, 45, 1);
+}
+table {
+  background-color: rgb(246, 189, 38);
+  width: 100%;
+  border-collapse: collapse;
+  padding: 13px 40px;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid black;
+  overflow: hidden;
+}
+td {
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 900px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cards {
+    display: block;
+  }
+  section {
+    margin-bottom: 10px;
+  }
 }

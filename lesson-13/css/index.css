@@ -11,6 +11,9 @@ h1 {
 h2 {
   color: rgb(246, 189, 38);
 }
+h3 {
+  color: rgb(255, 162, 144);
+}
 .test {
   color: white;
 }
@@ -19,6 +22,9 @@ h2 {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
   margin: 0 auto;
+}
+body {
+  margin: 0;
 }
 main {
   padding: 1.2em;
@@ -126,7 +132,4 @@ footer a {
   }
 }
 @media only screen and (max-width: 480px) {
-  .headcon {
-    background-color: cornflowerblue;
-  }
 }

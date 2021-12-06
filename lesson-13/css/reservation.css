@@ -1,0 +1,26 @@
+form {
+  display: block;
+  border: 1px solid black;
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+}
+.form-item,
+label {
+  padding-bottom: 1em;
+}
+.form-item,
+input {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.level {
+  width: 10px;
+}
+textarea {
+  width: 50%;
+}
+select {
+  font-family: inherit;
+}
