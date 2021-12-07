@@ -33,7 +33,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main><h1>Reservation Page</h1>
+    <main>
+        <h1>Reservations</h1>
         <h2>Book your stay at your nearest temple hotel!</h2>
         <form name="resevertionform"  action="thankyou.html" onSubmit="bleh(); return false">
             <div class="form-item">
@@ -67,22 +68,31 @@
                 <div>
                 <label for="suitetype">Suite Type:</label><br>
                 <datalist id="suitetype">
-                    <option value="One-Person"></option>
-                    <option value="Two-Person"></option>
-                    <option value="Three-Person"></option>
+                    <option value="Single Room"></option>
+                    <option value="Double Room"></option>
+                    <option value="Triple Room"></option>
+                    <option value="Quad Room"></option>
                 </datalist>
                 </div>
                 <div>
                     <label>
-                            <select name="cities" id="cities">
+                            <select name="suitroom" id="suitroom">
                                 <option value="" disabled selected>Select Suite Type</option>
-                                <option value="One-Person">One-Person</option>
-                                <option value="Two-Person">Two-Person</option>
-                                <option value="Three-Person">Three-Person</option>
+                                <option value="Single Room">Single Room</option>
+                                <option value="Double Room">Double Room</option>
+                                <option value="Triple Room">Triple Room</option>
+                                <option value="Quad Room">Quad Room</option>
                             </select>
                     </label>
                     </div>
-                    
+                    <label for="misson">Are you a Full-Time Missionary:</label>
+                    <div class="level">
+                        <input type="radio" id="yes" name="danger" value="yes">
+                        <label for="yes">Yes</label>
+                        <br>
+                        <input type="radio" id="no" name="danger" value="no">
+                        <label for="no">No</label>
+                    </div>
                 <div>
                     <label for="danger">Special Accommodations Or Comments:</label><br>
                     <textarea id="review" name="review" rows="5"></textarea>

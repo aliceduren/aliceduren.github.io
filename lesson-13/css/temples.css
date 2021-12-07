@@ -59,4 +59,7 @@ td {
   section {
     margin-bottom: 10px;
   }
+  table {
+    width: fit-content;
+  }
 }

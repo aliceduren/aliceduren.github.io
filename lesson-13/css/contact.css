@@ -5,13 +5,21 @@
 iframe {
   border: 2px solid black;
 }
+.form-item {
+  display: block;
+  border: 1px solid black;
+  text-align: left;
+  width: 60%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
 .form-item,
 label {
   padding-bottom: 1em;
 }
 .form-item,
 input {
-  width: 100%;
+  width: 80%;
   padding: 1em;
   box-sizing: border-box;
 }
@@ -29,4 +37,21 @@ select {
 }
 .comments {
   font-family: inherit;
+}
+.button {
+  background-color: rgb(246, 189, 38);
+  width: 30%;
+}
+@media only screen and (max-width: 900px) {
+  .flex {
+    display: block;
+  }
+  .map {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .button {
+    font-size: 10px;
+  }
 }
