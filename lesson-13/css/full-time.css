@@ -1,7 +1,8 @@
 .containers {
   max-width: 80%;
   margin: 0.5rem auto;
-  display: block; }
+  display: block;
+}
 
 /* .containers img {
   width: 20%;
@@ -12,45 +13,54 @@ section {
   padding: 4.2%;
   text-align: left;
   margin: 15px;
-  background-color: #ffa290; }
+  background-color: #ffa290;
+}
 
 section h2 {
-  color: black; }
+  color: black;
+}
 
 section:nth-of-type(odd) img {
   width: 30%;
   height: auto;
   float: right;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
 
 section:nth-of-type(even) img {
   width: 30%;
   height: auto;
   float: left;
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 
 section:nth-of-type(even) {
   text-align: right;
-  background-color: #ffa290; }
+  background-color: #ffa290;
+}
 
 section:nth-of-type(odd) {
-  background-color: #f6bd26; }
+  background-color: #f6bd26;
+}
 
 @media only screen and (max-width: 900px) {
   section {
-    text-align: center; }
+    text-align: center;
+  }
 
   section:nth-of-type(odd) img {
     width: 100%;
     float: none;
     padding-left: 0;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
 
   section:nth-of-type(even) img {
     width: 100%;
-    float: none; }
+    float: none;
+  }
 
   section:nth-of-type(even) {
-    text-align: center; } }
-
-/*# sourceMappingURL=full-time.css.map */
+    text-align: center;
+  }
+}
