@@ -1,0 +1,22 @@
+@media only screen and (max-width: 480px) {
+  button {
+    display: block;
+    background-color: transparent;
+  }
+  ul.navigation.responsive li {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    overflow: hidden;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+}

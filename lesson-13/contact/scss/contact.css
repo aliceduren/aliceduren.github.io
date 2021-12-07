@@ -1,0 +1,55 @@
+.flex {
+  display: flex;
+  justify-content: space-evenly; }
+
+iframe {
+  border: 2px solid black; }
+
+.form-item {
+  display: block;
+  border: 1px solid black;
+  text-align: left;
+  width: 60%;
+  margin-left: 10%;
+  margin-bottom: 3%; }
+
+.form-item,
+label {
+  padding-bottom: 1em; }
+
+.form-item,
+input {
+  width: 80%;
+  padding: 1em;
+  box-sizing: border-box; }
+
+.level {
+  width: 10px; }
+
+textarea {
+  width: 50%; }
+
+.phone {
+  text-align: center; }
+
+select {
+  font-family: inherit; }
+
+.comments {
+  font-family: inherit; }
+
+.button {
+  background-color: #f6bd26;
+  width: 30%; }
+
+@media only screen and (max-width: 900px) {
+  .flex {
+    display: block; }
+
+  .map {
+    text-align: center; } }
+@media only screen and (max-width: 480px) {
+  .button {
+    font-size: 10px; } }
+
+/*# sourceMappingURL=contact.css.map */

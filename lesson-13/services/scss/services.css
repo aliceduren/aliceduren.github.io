@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center; }
+
+.recep {
+  grid-column: 1;
+  background-color: #9e2d01;
+  margin-right: 10px;
+  color: white; }
+
+.full {
+  grid-column: 2;
+  background-color: #9e2d01;
+  margin-left: 10px;
+  color: white; }
+
+a {
+  color: #ffa290; }
+
+/*# sourceMappingURL=services.css.map */
