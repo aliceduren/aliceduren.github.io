@@ -1,7 +1,8 @@
 .reserv {
   text-align: center;
   padding: 1em 0px 1em 0px;
-  border: 3px solid #9e2d01;
+  color: white;
+  background-color: rgb(158, 45, 1);
 }
 
 #grid {
@@ -10,17 +11,20 @@
 }
 
 .phone {
-  background-color: #9e2d01;
+  background-color: rgb(158, 45, 1);
   grid-column: 1;
   margin: 2em;
-  padding-left: 1em;
-  color: white;
+  padding: 2em;
+  background-color: white;
+  border: 3px solid black;
 }
 
+a {
+  color: white;
+}
 .phone a {
-  color: white;
+  color: rgb(158, 45, 1);
 }
-
 .sumimg {
   width: 50%;
   height: auto;
@@ -33,6 +37,9 @@
 .templesum {
   grid-column: 2;
   margin: 2em;
+  padding: 2em;
+  background-color: white;
+  border: 3px solid black;
 }
 
 @media only screen and (max-width: 900px) {

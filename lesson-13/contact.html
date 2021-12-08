@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Page for Temple Inn and Suites.">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="js/index.js" defer></script>
@@ -36,33 +37,37 @@
     <main>
         <div>
             <h1>Contact Us!</h1>
-            <h2>Send us a Message!</h2>
             <form name="resevertionform"  action="thankyou2.html" onSubmit="bleh(); return false">
+                <h2>Send Us A Message!</h2>
                 <div class="form-item">
-                    <div>
-                    <label for="name">Full Name:</label><br>
+                    <ul class="con">
+                    <li>
+                    <label for="name">Full Name:</label>
                         <input type="text" id="name" name="names" minlength="5" pattern="[A-Za-z ]{3,50}" required>
-                    </div>
-                    <div>
-                        <label for="date">Date:</label><br>
+                    </li>
+                    <li>
+                        <label for="date">Date:</label>
                         <input type="date" id="date" name="date">
-                    </div>
+                    </li>
                    
-                    <div>
-                        <label for="email">Email:</label><br>
+                    <li>
+                        <label for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="user@email.org" required>
-                    </div>
-                    <div>
-                        <label for="phone">Phone Number:</label><br>
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
-                    </div>
-                    <div class="comments">
-                        <label for="danger">Other Comments:</label><br>
+                    </li>
+                    <li class="comments">
+                        <label for="danger">Other Comments:</label>
                         <textarea id="review" name="review" rows="5"  placeholder="Type your message here."></textarea>
-                    </div>
-                    <br>
+                    </li>
+                    
                     <input class="button" type="submit" value="Submit Form">
-        </div>
+                </ul>
+                </div>
+        </form>
+    </div>
         <div class="flex">
         <div class="phone">
             <h1>Contact Information</h1>

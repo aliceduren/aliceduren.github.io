@@ -1,35 +1,72 @@
 form {
-  display: block;
   border: 1px solid black;
   text-align: left;
   width: 80%;
-  margin-left: 10%; }
-
-.form-item,
-label {
-  padding-bottom: 1em; }
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+}
 
 .form-item,
 input {
-  width: 100%;
   padding: 1em;
-  box-sizing: border-box; }
 
-.level {
-  width: 10px; }
-
+  box-sizing: border-box;
+}
+.perinfo {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.mission {
+  padding: 0 8px;
+  justify-content: space-between;
+}
+.perinfo,
+.mission {
+  list-style-type: none;
+  padding: 0;
+}
+.perinfo li,
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.perinfo > li > label,
+.perinfo li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+.perinfo > li > label + *,
+.mission {
+  flex: 1 0 220px;
+}
+input {
+  margin: 1em;
+}
+.mission li {
+  width: 100px;
+}
 textarea {
-  width: 50%; }
+  width: 50%;
+}
 
 select {
-  font-family: inherit; }
+  font-family: inherit;
+}
 
 .button {
   background-color: #f6bd26;
-  width: 30%; }
-
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-radius: 2px;
+}
 @media only screen and (max-width: 480px) {
   .button {
-    font-size: 10px; } }
-
-/*# sourceMappingURL=reservation.css.map */
+    font-size: 10px;
+  }
+}
