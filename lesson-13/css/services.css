@@ -47,6 +47,16 @@ a {
   color: #ffa290;
 }
 @media only screen and (max-width: 900px) {
+  .full {
+    margin: 0 auto;
+  }
+  .recep {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .grid1 {
+    display: block;
+  }
   .grid2 {
     display: block;
   }

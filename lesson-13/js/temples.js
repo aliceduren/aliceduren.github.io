@@ -11,16 +11,20 @@ fetch('https://nathansbradshaw.github.io/temples2.json')
       h2.textContent = jsObject[i].name;
       let h3 = document.createElement('h3');
       h3.textContent = 'Phone: ' + jsObject[i].phone;
-      let p = document.createElement('p');
+      let p = document.createElement('h3');
       p.textContent = 'Address: ' + jsObject[i].address1;
-      let p2 = document.createElement('p');
-      p2.textContent = 'Services: ' + jsObject[i].services[0];
+      let p2 = document.createElement('h3');
+      p2.textContent = 'Services: ';
+      let p22 = document.createElement('p');
+      p22.textContent = jsObject[i].services[0];
       let p3 = document.createElement('p');
       p3.textContent = jsObject[i].services[1];
       let p4 = document.createElement('p');
       p4.textContent = jsObject[i].services[2];
       let p5 = document.createElement('p');
       p5.textContent = jsObject[i].services[3];
+      let p55 = document.createElement('h3');
+      p55.textContent = 'Fun Fact: ';
       let p6 = document.createElement('p');
       p6.textContent = jsObject[i].Summary.facts[0];
 
@@ -29,9 +33,11 @@ fetch('https://nathansbradshaw.github.io/temples2.json')
       card.appendChild(h3);
       card.appendChild(p);
       card.appendChild(p2);
+      card.appendChild(p22);
       card.appendChild(p3);
       card.appendChild(p4);
       card.appendChild(p5);
+      card.appendChild(p55);
       card.appendChild(p6);
 
       document.querySelector('div.cards').appendChild(card);

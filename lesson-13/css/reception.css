@@ -19,25 +19,27 @@ h3 {
 }
 
 .food {
-  padding: 2em;
+  padding: 1em;
 }
 
 .foodimg {
   width: 20%;
   float: right;
   margin-left: 1em;
+  margin-bottom: 0.4em;
   border: 2px solid white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
 }
 
 .setup {
-  padding: 2em;
+  padding: 1em;
 }
 
 .setupimg {
   width: 20%;
   float: left;
   margin-right: 1em;
+  margin-bottom: 0.4em;
   border: 2px solid white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
 }
@@ -51,6 +53,9 @@ h3 {
   border: 3px solid black;
 }
 @media only screen and (max-width: 900px) {
+  /*  */
+}
+@media only screen and (max-width: 480px) {
   .color {
     display: block;
   }
@@ -59,6 +64,10 @@ h3 {
     float: none;
     width: 100%;
   }
+  .foodimg {
+    margin: 0 auto;
+  }
+  .recepimg {
+    margin: 0 auto;
+  }
 }
-
-/*# sourceMappingURL=reception.css.map */
