@@ -45,14 +45,17 @@ input {
   margin: 1em;
 }
 .mission li {
-  width: 100px;
+  width: 100%;
 }
 textarea {
   width: 50%;
+  margin: 1em;
 }
 
 select {
   font-family: inherit;
+  padding: 0.5em;
+  margin: 1em;
 }
 
 .button {

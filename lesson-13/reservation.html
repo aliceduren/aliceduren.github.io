@@ -70,36 +70,32 @@
                 </li>
                 
                 <li>
-                <label for="suitetype">Suite Type:</label><br>
+                <label for="suitetype">Suite Type:</label>
                 <datalist id="suitetype">
                     <option value="Single Room"></option>
                     <option value="Double Room"></option>
                     <option value="Triple Room"></option>
                     <option value="Quad Room"></option>
                 </datalist>
+                <select name="suitroom" id="suitroom" required>
+                    <option value="" disabled selected>Select Suite Type</option>
+                    <option value="Single Room">Single Room</option>
+                    <option value="Double Room">Double Room</option>
+                    <option value="Triple Room">Triple Room</option>
+                    <option value="Quad Room">Quad Room</option>
+                </select>
             </li>
                 <li>
-                    <label>
-                            <select name="suitroom" id="suitroom" required>
-                                <option value="" disabled selected>Select Suite Type</option>
-                                <option value="Single Room">Single Room</option>
-                                <option value="Double Room">Double Room</option>
-                                <option value="Triple Room">Triple Room</option>
-                                <option value="Quad Room">Quad Room</option>
-                            </select>
-                    </label>
+                            
                 </li>
                 <ul class="mission">
                     <p for="misson">Are you a Full-Time Missionary:</p>
                     <li class="level">
                         <input type="radio" id="yes" name="danger" value="yes">
                         <label for="yes">Yes</label>
-                    </li>
-                    <li>
                         <input type="radio" id="no" name="danger" value="no">
                         <label for="no">No</label>
                     </li>
-                    
                 </ul>
                 <li>
                     <label for="danger">Special Accommodations Or Comments:</label><br>

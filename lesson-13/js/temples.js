@@ -1,59 +1,3 @@
-// fetch('https://nathansbradshaw.github.io/temples2.json')
-//   .then((response) => response.json())
-//   .then((jsObject) => {
-//     console.log(jsObject);
-//     for (let i = 0; i < jsObject.length; i++) {
-//       let card = document.createElement('section');
-//       let image = document.createElement('img');
-//       image.setAttribute('src', jsObject[i].imageurl);
-//       image.alt = jsObject[i].name;
-//       let h2 = document.createElement('h2');
-//       h2.textContent = jsObject[i].name;
-//       let h3 = document.createElement('h3');
-//       h3.textContent = 'Phone: ' + jsObject[i].phone;
-//       let p = document.createElement('h3');
-//       p.textContent = 'Address: ' + jsObject[i].address1;
-//       let p2 = document.createElement('h3');
-//       p2.textContent = 'Services: ';
-//       let p22 = document.createElement('p');
-//       p22.textContent = jsObject[i].services[0];
-//       let p3 = document.createElement('p');
-//       p3.textContent = jsObject[i].services[1];
-//       let p4 = document.createElement('p');
-//       p4.textContent = jsObject[i].services[2];
-//       let p5 = document.createElement('p');
-//       p5.textContent = jsObject[i].services[3];
-//       let p55 = document.createElement('h3');
-//       p55.textContent = 'Fun Fact: ';
-//       let p6 = document.createElement('p');
-//       p6.textContent = jsObject[i].Summary.facts[0];
-
-//       card.appendChild(image);
-//       card.appendChild(h2);
-//       card.appendChild(h3);
-//       card.appendChild(p);
-//       card.appendChild(p2);
-//       card.appendChild(p22);
-//       card.appendChild(p3);
-//       card.appendChild(p4);
-//       card.appendChild(p5);
-//       card.appendChild(p55);
-//       card.appendChild(p6);
-
-//       document.querySelector('div.cards').appendChild(card);
-//     }
-//   });
-// fetch('https://nathan-byui-api.herokuapp.com/temples/', {
-//   headers: {
-//     apiKey:
-//       'Ezl0961tEpx2UxTZ5v2uKFK91qdNAr5npRlMT1zLcE3Mg68XwZj3N8Dyp1R8IvFenrVwHRllOUxF0Og00l0m9NcaYMtH6Bpgdv7N',
-//   },
-// })
-//   .then((response) => response.json())
-//   .then((jsObject) => {
-//     console.log(jsObject);
-//   });
-// for (let i = 0; i < jsObject.length; i++) {
 temples = [109, 108, 103, 198];
 temples.forEach((templeid) => {
   fetch(`https://nathan-byui-api.herokuapp.com/temples/${templeid}`, {
@@ -91,7 +35,11 @@ temples.forEach((templeid) => {
       let p55 = document.createElement('h3');
       p55.textContent = 'History: ';
       let p6 = document.createElement('p');
-      p6.textContent = jsObject.Summary.facts;
+      p6.textContent = jsObject.Summary.facts[0];
+      let p66 = document.createElement('p');
+      p6.textContent = jsObject.Summary.facts[1];
+      let p666 = document.createElement('p');
+      p6.textContent = jsObject.Summary.facts[2];
 
       card.appendChild(image);
       card.appendChild(h2);
@@ -121,21 +69,11 @@ temples.forEach((templeid) => {
       }
       card.appendChild(p55);
       card.appendChild(p6);
+      card.appendChild(p66);
+      card.appendChild(p666);
 
       document.querySelector('div.cards').appendChild(card);
     });
-  //   if (
-  //     jsObject[i].temple_id == 101 ||
-  //     jsObject[i].temple_id == 79 ||
-  //     jsObject[i].temple_id == 198 ||
-  //     jsObject[i].temple_id == 205
-  //   )
-  //   let card = document.createElement('section');
-  //   card.setAttribute('class', jsObject[i].temple_id);
-  //   let tname = document.createElement('h2');
-  //   tname.textContent = jsObject[i].name;
-  //   card.appendChild(tname);
-  //   document.querySelector('.div.cards').appendChild(card);
 });
 
 function windchill(t, s) {

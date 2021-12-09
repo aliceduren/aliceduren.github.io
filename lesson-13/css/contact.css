@@ -64,6 +64,7 @@ select {
 
 .comments {
   font-family: inherit;
+  margin: 1em;
 }
 .phone {
   background-color: rgb(158, 45, 1);
