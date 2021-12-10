@@ -68,4 +68,5 @@ section:nth-of-type(odd) {
   }
 }
 @media only screen and (max-width: 480px) {
+  /* n/a */
 }
