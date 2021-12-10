@@ -1,4 +1,4 @@
-temples = [109, 108, 103, 198];
+temples = [103, 198, 109, 108];
 temples.forEach((templeid) => {
   fetch(`https://nathan-byui-api.herokuapp.com/temples/${templeid}`, {
     headers: {
@@ -35,11 +35,7 @@ temples.forEach((templeid) => {
       let p55 = document.createElement('h3');
       p55.textContent = 'History: ';
       let p6 = document.createElement('p');
-      p6.textContent = jsObject.Summary.facts[0];
-      let p66 = document.createElement('p');
-      p6.textContent = jsObject.Summary.facts[1];
-      let p666 = document.createElement('p');
-      p6.textContent = jsObject.Summary.facts[2];
+      p6.textContent = jsObject.Summary.facts;
 
       card.appendChild(image);
       card.appendChild(h2);
@@ -69,8 +65,6 @@ temples.forEach((templeid) => {
       }
       card.appendChild(p55);
       card.appendChild(p6);
-      card.appendChild(p66);
-      card.appendChild(p666);
 
       document.querySelector('div.cards').appendChild(card);
     });

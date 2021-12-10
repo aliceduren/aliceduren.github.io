@@ -55,6 +55,7 @@ textarea {
 }
 
 .phone {
+  padding: 1em;
   text-align: left;
 }
 
@@ -95,9 +96,7 @@ select {
   .flex {
     display: block;
   }
-  .phone {
-    padding: 0;
-  }
+
   .map {
     text-align: center;
     padding: 0;

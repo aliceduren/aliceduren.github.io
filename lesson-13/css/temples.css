@@ -58,12 +58,14 @@ td {
 }
 
 @media only screen and (max-width: 900px) {
-}
-@media only screen and (max-width: 480px) {
   .cards {
     display: block;
   }
-
+  tr {
+    overflow-wrap: anywhere;
+  }
+}
+@media only screen and (max-width: 480px) {
   section {
     margin-bottom: 10px;
   }
