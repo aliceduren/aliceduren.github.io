@@ -6,7 +6,12 @@ form {
   background-color: white;
   padding: 1em;
 }
-
+.htwo h2 {
+  padding: 1em;
+  margin: 0 auto;
+  color: black;
+  background-color: #f6bd26;
+}
 .form-item,
 input {
   padding: 1em;
