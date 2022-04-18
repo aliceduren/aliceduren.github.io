@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Lora:wght@600&display=swap');
+a:link{
+    text-decoration: none;
+    color: white;
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: inherit;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F7EDD7;
+}
+div{
+    margin: 0;
+}
+article{
+    background-color: white;
+    
+}
+h1,h2{
+    font-family: 'Libre Franklin', sans-serif;
+font-family: 'Lora', serif;
+}
+header{
+    margin: 0 auto;
+color: white;
+background-color: #6495ED;
+}
+
+@media only screen and (min-width: 480px) {
+    body{
+        display: block;
+    }
+    header{
+        
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    header{background-color: rgb(157, 255, 0);}
+  }
