@@ -2,101 +2,133 @@
 a:link{
     text-decoration: none;
 }
-h1 a:link{
-    color: white;
+a:link, a:visited{
+    color:  #666;
 }
-nav a:link{
-    color: white;
+h1 a:link, h1 a:visited{
+    color: rgb(0, 0, 0);
 }
-h2 a:link{
-    color: black;
+
+a:active{
+    color: #DEB887;
 }
-p a:link{
-    color: #6495ED;
+a:hover{
+    color:#00ddff;
 }
 ul{
     list-style-type: none;
     line-height: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Lora', serif;
+    margin: -5px;
+    padding: 10px;
+
+}
+ul{
+    color: #d0d0d0;
 }
 .post-date,p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
 }
 .post-date{
-    color: #8c8c8c;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Lora', serif;
+    color: black;
+    text-transform: uppercase;
+    text-align:right;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 1.7em;
 }
 body{
+    display: block;
+    max-width: 100%;
     margin: 0;
-    width: 900px;
     height: inherit;
     overflow-x: hidden;
-    background-color: #F7EDD7;
 }
 div{
     margin: 0;
 }
 article{
     background-color: white;
-    box-shadow: 5px 5px 5px rgba(79, 79, 79, 0.425);
     padding: 2em;
     margin-bottom: 1em;
     
+}h1{
+    font-size: 5em;
 }
 h1,h2{
     font-family: 'Libre Franklin', sans-serif;
 font-family: 'Lora', serif;
 }
 h2{
-    font-size: 2em;
-    margin-bottom: 2em;
+    font-size: 2.2em;
 }
 nav{
-    border-top: 1px solid white;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 1.5em;
+    text-transform: uppercase;
 
 }
 header{
     margin: 0 auto;
-    color: white;
-    background-color: #6495ED;
-    text-align: right;
-    padding: 3em;
+    text-align: center;
 }
 main{
-    padding:2em;
+    padding-top:2em;
+}
+figure{
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+figure img{
+    margin: auto;
 }
 
-@media only screen and (min-width: 100px) {
+  @media only screen and (min-width: 700px) {
     body{
-        display: block;
-        max-width: 100%;
-       
+        margin: 40px;
     }
-    figure{
-        align-items: center;
-    }
-    figure img{
-        width: 13em;
-        height: auto;
-    }
-  }
-  @media only screen and (min-width: 600px) {
-    div{
-        max-width: 90%;
+    article{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 183px 1fr;
         grid-template-rows: auto;
         gap: 10px;
+        padding: 0;
+        margin: 0;
     }
-    header{
+    nav{
+        padding-right: 45px;
+    }
+    ul{
+        text-align: right;
+        margin-right:10px;
+    }
+    li{
+        display: inline;
+        
+    }
+    li a{
+        padding: 10px;
+    }
+    .post-date{
+        padding-right: 10px;
+        border-right: 1px solid #d0d0d0;
+        border-bottom: none;
         grid-column-start: 1;
         grid-column-end: 1;
     }
-    main{
+    section{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #d0d0d0;
         width: 100%;
         grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-end: 2;
     }
     figure img{
-        width: 16em;
+        width: 30%;
     }
   }
