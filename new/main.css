@@ -94,7 +94,7 @@ figure img{
     }
     article{
         display: grid;
-        grid-template-columns: 183px 1fr;
+        grid-template-columns: 200px 1fr;
         grid-template-rows: auto;
         gap: 10px;
         padding: 0;
